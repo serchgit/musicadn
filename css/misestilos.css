@@ -1,0 +1,62 @@
+.html {
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.gold{color:#e2ad1b;}
+section{border-top:8px solid #fec424;}
+hr{border-top:2px solid #fec424}
+.cont-form{width: 75%;border-right: 1px solid #ccc;}
+.item-form{
+  position: relative;
+  border: 2px solid #e2ad1b;
+  margin-top: 1.5rem;
+}
+form label{
+  position: absolute;
+  top: -25px;
+  left: -2px;
+  padding-bottom: 3px;
+  font-size: 14px;
+}
+.listaPortaP li{
+  font-size: 14px;
+  font-weight: 600;
+}
+.listaPortaP li span{
+  font-weight: 400;
+}
+
+/* ============== estilos tabla ==================*/
+table thead tr{background:#e2ad1b;color:#fff;}
+.tabla tbody tr td:first-child{cursor:pointer;}
+.tabla tbody tr:hover{box-shadow: 1px 0 0 2px gold;}
+.dataTables_filter{display: flex;justify-content: end;margin-bottom:10px;}
+.dataTables_filter label input{margin-left: 1rem;padding:.25rem .75rem;}
+.dataTables_paginate{display: flex;justify-content: space-between;margin-top: 1rem;}
+.dataTables_paginate a{
+  border: 1px solid;
+  border-radius: 4px;
+  text-decoration: none;
+  padding:2px 10px;
+}
+.dataTables_paginate span a{
+  border-radius: 0;
+}
+.dataTables_paginate span a:first-child{border-radius: 4px 0 0 4px;}
+.dataTables_paginate span a:last-child{border-radius: 0 4px 4px 0;}
+table tbody tr td input[type=range]{width: 6rem;}
+
+.cont-tabla{border-right: 2px solid darkred}
+
+.btn-tempo{
+  width: 3rem;
+}
+
+.footer {
+    padding: .75rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

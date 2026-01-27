@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="es" class="html">
+
+<head>
+  <link rel="shortcut icon" href="" />
+  <title>Lista BPS</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/metronomo.css">
+  <link rel="stylesheet" href="css/misEstilos.css">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/toastr.min.css">
+  
+</head>
+<style>
+  
+</style>
+
+<body>
+  <?php require_once("header.php");?>
+<audio src="click.wav" crossorigin="anonymous" id="click" type="audio/wav"></audio>
+  <div class="container sticky-top">
+    <section class="metronome-container w-100 bg-dark m-0 mt-2 pt-4">
+      <div class="counter"></div>
+      
+      <i class="fa fa-cog options-btn"></i>
+
+      <div class="controls d-flex align-items-center justify-content-between">
+        <label>BPM: <span class="ms-1">
+                      <i class="fa fa-minus bpm-minus"></i>
+                      <input type="text" value="120" class="bpm-input" />
+                      <i class="fa fa-plus bpm-plus"></i>
+                    </span>
+        </label>
+        <label>
+          Beat: <input type="text" value="4" class="ts-top ms-1" id="ts-top" /></label>
+        <div>
+          <input type="checkbox" id="timer-check" />
+          <label for="timer-check"></label>
+          
+          Timer: <input type="text" value="60" class="timer ms-1" />
+        </div>
+
+        <button class="tap-btn">Tap</button>
+        <button class="play-btn">Play</button>
+      </div>
+      
+      <div class="options">
+        <i class="fa fa-caret-down up"></i>
+        <label>Off Beat Pitch: <input type="range" min="0" max="500" value="200" class="beat-range" /></label>
+        <label>Accent Pitch: <input type="range" min="0" max="500" value="380" class="accent-range" /></label>
+      </div>
+    </section>
+  </div>
+
+  <section class="container bienvenida bg-light my-3 p-2">
+    <h2 class="verde mb-2 text-center text-muted">Lista de Tiempos y Secuencias</h2>
+    <hr>
+    <div class="d-flex flex-wrap">
+        <div class="cont-tabla col-12 col-lg-6 px-2">
+          <table class="table table-striped tabla">
+            <thead>
+              <th class="">TÍTULO</th>
+              <th class="text-center">TIEMPO</th>
+              <th class="text-center">SECUENCIA</th>
+            </thead>
+            <tbody>
+              
+            </tbody>
+          </table>
+        </div>
+      <div class="cont-listaDia col-12 col-lg-6 px-2 mt-md-5 mt-lg-0">
+        <h4 class="text-center mb-3 text-muted">Lista del día</h4>
+        <table class="table listaDia">
+            <!--<thead>
+              <th class="col-9">TÍTULO</th>
+              <th class="col-3 text-center">TIEMPO</th>
+            </thead>-->
+            <tbody>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </section>
+  	
+<footer class="d-flex justify-content-center bg-dark py-1 footer">
+  <p class="text-white"> - </p>
+</footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/dataTables.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/toastr.min.js"></script>
+  <script src="js/lista.js"></script>
+  <script src="js/funciones.js"></script>
+  <script src="js/metronomo.js"></script>
+  <script>
+    
+    $(document).ready(function() {
+      $("nav li a[href='index.php']").addClass('active');
+    });
+
+  </script>
+</body>
+
+</html>
