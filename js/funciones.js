@@ -42,6 +42,12 @@ Lista.forEach(function (ele, index, array){
           //{ extend: 'copyHtml5', text: 'Copiar', title: ''}
         //]
       });
+
+    //var tablaLista = $(".tabla").DataTable()
+    //var valorOculto = tablaLista.row(25).data()[2];
+    //var btnOculto = $(valorOculto).children("button.stop").prevObject[2];
+    //console.log(btnOculto); 
+
 var playListaG = $(".tabla tbody tr td:last-child button.play");
 botonPlay(playListaG,"volumenListG")
 
@@ -102,23 +108,46 @@ $(".tabla tbody tr td:first-child").click(function(event) {
 
 function botonPlay(boton,input){
     $(boton).click(function(event) {
+        var titulo = $(this).parents("tr").children('td:first-child').text()
+
         var boton = $(this);
         var archivo = boton.attr("data-secuencia");
         var index = $(this).attr("data-index");
-        console.log(archivo)
+        //console.log(titulo)
         if (boton.hasClass("play")) {
+            $(".tit-playing").html("<b>"+titulo+"</b>");
+            $(".btn-cont-playing").click()
             const miAudio = new Audio('msc/'+archivo);
+
             miAudio.play()
+
+            $(".cont-reproduciendo .collapse").addClass('show')
 
             $(this).siblings("button.stop").removeClass('d-none').click(function(event) {
                 miAudio.pause()
                 $(this).addClass('d-none')
+                $(".cont-reproduciendo .collapse").removeClass('show');
             });
+
+
+
+            $(".btn-reproduciendo").click(function(event) {
+                miAudio.pause()
+                $("button.stop").addClass('d-none')
+                $(".cont-reproduciendo .collapse").removeClass('show')
+            });
+
              var volumenSlider = document.getElementById(input+index);
                 // Evento para cuando cambia el valor del slider
                 volumenSlider.addEventListener('input', function() {
                     miAudio.volume = this.value;
                 });
+
+            miAudio.onended = function(){
+                $("button.stop").addClass('d-none')
+                $(".cont-reproduciendo .collapse").removeClass('show')
+            }
+
         }else{
 
         }
@@ -148,6 +177,10 @@ function BtnTempo(button){
           }
     });
 }
+
+$(".btn-cont-playing").click(function(event) {
+    
+});
     //const miAudio = new Audio('msc/archivo.mp3'); // Ejemplo: 'sonidos/intro.mp3' o 'audio/musica.wav'
 
     // 2. Obtener los botones

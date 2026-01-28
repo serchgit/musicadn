@@ -60,3 +60,43 @@ table tbody tr td input[type=range]{width: 6rem;}
     bottom: 0;
     width: 100%;
 }
+
+
+.bienvenida{position: relative;}
+.btn-cont-playing{
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+.mostrar{
+  transition: .5s;
+  transform: rotate(180deg);
+}
+.ocultar{
+  transition: .5s;
+  transform:rotate(0deg);
+}
+
+@media (max-width: 990px){
+  .play-btn, .tap-btn{
+    width: 13% !important;
+  }
+}
+
+@media (max-width: 576px){
+  .controls{
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+  }
+  .controls label{
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .controls .cont-controls{
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .play-btn, .tap-btn{
+    width: 45% !important;
+  }
+}

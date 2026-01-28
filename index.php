@@ -38,7 +38,7 @@
         </label>
         <label>
           Beat: <input type="text" value="4" class="ts-top ms-1" id="ts-top" /></label>
-        <div>
+        <div class="cont-controls">
           <input type="checkbox" id="timer-check" />
           <label for="timer-check"></label>
           
@@ -55,9 +55,19 @@
         <label>Accent Pitch: <input type="range" min="0" max="500" value="380" class="accent-range" /></label>
       </div>
     </section>
+    <div class="cont-reproduciendo text-center">
+        <div class="collapse" id="reproduciendo">
+          <div class="alert alert-info rounded-0 d-flex justify-content-center align-items-center" role="alert">
+            <p class="mb-0">Reproduciendo Secuencia: <span class="tit-playing"><b>Nombre Secuencia</b></span></p>
+            <button class="btn-reproduciendo btn btn-sm btn-danger ms-3" title="Detener Secuencia"><i class="fa fa-stop"></i></button>
+          </div>
+        </div>
+    </div>
   </div>
+ 
 
   <section class="container bienvenida bg-light my-3 p-2">
+     
     <h2 class="verde mb-2 text-center text-muted">Lista de Tiempos y Secuencias</h2>
     <hr>
     <div class="d-flex flex-wrap">
