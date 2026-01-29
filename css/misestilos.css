@@ -77,6 +77,21 @@ table tbody tr td input[type=range]{width: 6rem;}
   transform:rotate(0deg);
 }
 
+/*============== estilos para arrastrar ==================== */
+
+table.listaDia {border-collapse: collapse; margin: 20px; }
+table.listaDia tbody tr:first-child {
+  border-bottom: 4px double darkred;
+}
+table.listaDia th, td {padding: 10px; text-align: left; }
+table.listaDia tr { cursor: grab; background-color: white; }
+table.listaDia /* Estilo para cuando la fila es arrastrada */
+table.listaDia tr.dragging { opacity: 0.5; background-color: #f0f0f0; }
+table.listaDia /* Estilo para resaltar destino */
+table.listaDia tr.over { border: 2px dashed #000; }
+
+
+
 @media (max-width: 990px){
   .play-btn, .tap-btn{
     width: 13% !important;

@@ -9,13 +9,13 @@
         <li class="nav-item">
           <a class="nav-link" aria-current="page" href="index.php">Lista BPS <i class="fa fa-home"></i></a>
         </li>
-        <li class="nav-item">
+        <!--<li class="nav-item">
           <a class="nav-link" href="notas.php">Notas</a>
         </li>
         <li class="nav-item h">
           <a class="nav-link" href="himnos.php">Himnos</a>
         </li>
-        <!--<li class="nav-item">
+        <li class="nav-item">
           <a class="nav-link" href="logout.php">Salir <i class="fa fa-sign-out"></i></a>
         </li>-->
       </ul>

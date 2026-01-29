@@ -52,6 +52,7 @@ var playListaG = $(".tabla tbody tr td:last-child button.play");
 botonPlay(playListaG,"volumenListG")
 
 let seleccionados = [];
+
 $(".tabla tbody tr td:first-child").click(function(event) {
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
@@ -62,7 +63,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
     var index = $(this).closest('tr').attr("data-index");
     var size = $(this).siblings('td.tiempo').children("button").attr("data-size");
     //console.log(index)
-    var item = `<tr data-index="${index}">
+    var item = `<tr data-index="${index}" draggable="true">
                     <td><button class='btn btn-sm btn-outline-danger me-2' data-toggle='tooltip' data-bs-placement='right' title='Quitar de la lista'><i class='fa fa-trash'></i></button>"${titulo}"</td>
                     <td class="text-danger font-weight-bold"><button class="btn btn-sm btn-primary btn-tempo" data-size="${size}">${tiempo}</button></td>`;
     if (secuencia == undefined) {
@@ -77,7 +78,9 @@ $(".tabla tbody tr td:first-child").click(function(event) {
     }
     
    $(".listaDia tbody").append(item);
+
    BtnTempo(".btn-tempo");
+
     var sel = $(".listaDia tbody tr:last-child");
     //console.log(sel);
 
@@ -178,9 +181,34 @@ function BtnTempo(button){
     });
 }
 
-$(".btn-cont-playing").click(function(event) {
-    
-});
+
+const tabla = document.getElementById('ListaDia');
+    let filaArrastrada = null;
+
+    // Evento al iniciar el arrastre
+    tabla.addEventListener('dragstart', (e) => {
+        filaArrastrada = e.target;
+        e.target.classList.add('dragging');
+    });
+
+    // Evento cuando termina el arrastre
+    tabla.addEventListener('dragend', (e) => {
+        e.target.classList.remove('dragging');
+    });
+
+    // Evento cuando se pasa por encima de un objetivo
+    tabla.addEventListener('dragover', (e) => {
+        e.preventDefault(); // Necesario para permitir soltar
+        const filaDestino = e.target.closest('tr');
+        if (filaDestino && filaDestino !== filaArrastrada && filaDestino.parentNode.nodeName === 'TBODY') {
+            // Determinar si soltar antes o después
+            const rect = filaDestino.getBoundingClientRect();
+            const next = (e.clientY - rect.top) / (rect.bottom - rect.top) > 0.5;
+            tabla.querySelector('tbody').insertBefore(filaArrastrada, next ? filaDestino.nextSibling : filaDestino);
+        }
+    });
+
+
     //const miAudio = new Audio('msc/archivo.mp3'); // Ejemplo: 'sonidos/intro.mp3' o 'audio/musica.wav'
 
     // 2. Obtener los botones

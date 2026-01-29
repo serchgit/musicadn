@@ -85,7 +85,7 @@
         </div>
       <div class="cont-listaDia col-12 col-lg-6 px-2 mt-md-5 mt-lg-0">
         <h4 class="text-center mb-3 text-muted">Lista del día</h4>
-        <table class="table listaDia">
+        <table class="table listaDia" id="ListaDia">
             <!--<thead>
               <th class="col-9">TÍTULO</th>
               <th class="col-3 text-center">TIEMPO</th>
