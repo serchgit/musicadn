@@ -1,6 +1,6 @@
 //window.AudioContext = window.AudioContext || window.webkitAudioContext;
 var context = new AudioContext();
-var timer, noteCount, counting, accentPitch = 380, offBeatPitch = 200;
+var timer, noteCount, counting, accentPitch = 420, offBeatPitch = 250;
 var delta = 0;
 var curTime = 0.0;
 

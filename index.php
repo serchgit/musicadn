@@ -22,7 +22,9 @@
 
 <body>
   <?php require_once("header.php");?>
+
 <audio src="click.wav" crossorigin="anonymous" id="click" type="audio/wav"></audio>
+
   <div class="container sticky-top">
     <section class="metronome-container w-100 bg-dark m-0 mt-2 pt-4">
       <div class="counter"></div>
@@ -51,8 +53,8 @@
       
       <div class="options">
         <i class="fa fa-caret-down up"></i>
-        <label>Off Beat Pitch: <input type="range" min="0" max="500" value="200" class="beat-range" /></label>
-        <label>Accent Pitch: <input type="range" min="0" max="500" value="380" class="accent-range" /></label>
+        <label>Off Beat Pitch: <input type="range" min="0" max="500" value="250" class="beat-range" /></label>
+        <label>Accent Pitch: <input type="range" min="0" max="500" value="420" class="accent-range" /></label>
       </div>
     </section>
     <div class="cont-reproduciendo text-center">
@@ -71,18 +73,18 @@
     <h2 class="verde mb-2 text-center text-muted">Lista de Tiempos y Secuencias</h2>
     <hr>
     <div class="d-flex flex-wrap">
-        <div class="cont-tabla col-12 col-lg-6 px-2">
-          <table class="table table-striped tabla">
-            <thead>
-              <th class="">TÍTULO</th>
-              <th class="text-center">TIEMPO</th>
-              <th class="text-center">SECUENCIA</th>
-            </thead>
-            <tbody>
-              
-            </tbody>
-          </table>
-        </div>
+      <div class="cont-tabla col-12 col-lg-6 px-2">
+        <table class="table table-striped tabla">
+          <thead>
+            <th class="">TÍTULO</th>
+            <th class="text-center">TIEMPO</th>
+            <th class="text-center">SECUENCIA</th>
+          </thead>
+          <tbody>
+            
+          </tbody>
+        </table>
+      </div>
       <div class="cont-listaDia col-12 col-lg-6 px-2 mt-md-5 mt-lg-0">
         <h4 class="text-center mb-3 text-muted">Lista del día</h4>
         <table class="table listaDia" id="ListaDia">

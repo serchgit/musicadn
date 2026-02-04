@@ -95,7 +95,16 @@ let Lista = [
 	{"Titulo":"Cantaré de tu Amor","Tiempo":"166","Size":"4"},
 	{"Titulo":"Somos el pueblo","Tiempo":"95","Size":"4"},
 	{"Titulo":"Te alabamos","Tiempo":"96","Size":"4"},
+	{"Titulo":"Esperar en ti","Tiempo":"105","Size":"4"},
+	{"Titulo":"Que sería de mi","Tiempo":"109","Size":"4"},
+	{"Titulo":"Tu Pueblo dice Gracias","Tiempo":"125","Size":"4"},
+	{"Titulo":"Quien como el Señor?","Tiempo":"98","Size":"4"},
+	{"Titulo":"No hay lugar mas alto","Tiempo":"136","Size":"4"},
+	{"Titulo":"Al alto y sublime","Tiempo":"108","Size":"4"},
 	{"Titulo":"Te daré lo mejor","Tiempo":"106","Secuencia":"TeDareLoMejor-Sec1.mp3","Size":"4"},
 	{"Titulo":"Los muros caerán","Tiempo":"152","Secuencia":"LosMurosCaeran-Sec1.mp3","Size":"4"},
-	{"Titulo":"Soy sano","Tiempo":"105","Secuencia":"SoySano-Sec1.mp3","Size":"4"}
+	{"Titulo":"Soy sano","Tiempo":"105","Secuencia":"SoySano-Sec1.mp3","Size":"4"},
+	{"Titulo":"Dios eres mío","Tiempo":"157","Secuencia":"DiosEresMio.mp3","Size":"4"},
+	{"Titulo":"Queremos ver","Tiempo":"155","Secuencia":"QueremosVer.mp3","Size":"4"},
+	{"Titulo":"No hay otro nombre","Tiempo":"148","Secuencia":"NoHayOtroNombre.mp3","Size":"4"}
 ];
