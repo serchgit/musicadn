@@ -101,6 +101,8 @@ let Lista = [
 	{"Titulo":"Quien como el Señor?","Tiempo":"98","Size":"4"},
 	{"Titulo":"No hay lugar mas alto","Tiempo":"136","Size":"4"},
 	{"Titulo":"Al alto y sublime","Tiempo":"108","Size":"4"},
+	{"Titulo":"Por siempre","Tiempo":"128","Size":"4"},
+	{"Titulo":"Yo te busco","Tiempo":"85","Size":"4"},
 	{"Titulo":"Te daré lo mejor","Tiempo":"106","Secuencia":"TeDareLoMejor-Sec1.mp3","Size":"4"},
 	{"Titulo":"Los muros caerán","Tiempo":"152","Secuencia":"LosMurosCaeran-Sec1.mp3","Size":"4"},
 	{"Titulo":"Soy sano","Tiempo":"105","Secuencia":"SoySano-Sec1.mp3","Size":"4"},

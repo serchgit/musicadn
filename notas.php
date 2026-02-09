@@ -37,7 +37,7 @@
           </table>
         </div>
       <div class="cont-canto-notas bg-dark p-2">
-        <button class="btn btn-secondary btn-sm"><i class="fa fa-arrow-left"></i></button>
+        <button class="btn btn-secondary btn-sm btn-maximizar"><i class="fa fa-arrow-left"></i></button>
         <h4 class="titulo text-warning text-center">La casa de Dios</h4>
         <div class="intro text-white border-top border-bottom border-info">
           <small>Intro</small>
@@ -76,6 +76,7 @@
   <script src="js/toastr.min.js"></script>
   <script src="js/lista.js"></script>
   <script src="js/funciones.js"></script>
+  <script src="js/funcionesNotas.js"></script>
   <script>
     
     $(document).ready(function() {

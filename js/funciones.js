@@ -209,6 +209,7 @@ const tabla = document.getElementById('ListaDia');
     });
 
 
+
     //const miAudio = new Audio('msc/archivo.mp3'); // Ejemplo: 'sonidos/intro.mp3' o 'audio/musica.wav'
 
     // 2. Obtener los botones

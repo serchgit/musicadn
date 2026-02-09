@@ -95,8 +95,12 @@ table.listaDia tr.over { border: 2px dashed #000; }
 
 .estrofa p{position: relative;}
 .estrofa p span{position: absolute;top:-1.2rem;font-weight: bold;color:lime;}
-.cont-tabla-notas{width: 35%;}
-.cont-canto-notas{width: 65%;}
+.cont-tabla-notas{transition:.5s;width: 40%;}
+.cont-canto-notas{transition:.5s;width: 60%;position: absolute;right: 0;}
+.btn-maximizar{
+  position: absolute;
+}
+.max{width: 90%;}
 
 
 @media (max-width: 990px){
