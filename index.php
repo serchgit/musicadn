@@ -47,8 +47,8 @@
           Timer: <input type="text" value="60" class="timer ms-1" />
         </div>
 
-        <button class="tap-btn">Tap</button>
-        <button class="play-btn">Play</button>
+        <button class="btn btn-secondary tap-btn">Tap</button>
+        <button class="btn play-btn">Play</button>
       </div>
       
       <div class="options">

@@ -147,8 +147,8 @@ header {
     text-align: center;
     
     .dot {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       display: inline-block;
       margin-right: 10px;
       background: #FFF;
