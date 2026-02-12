@@ -13,7 +13,7 @@ Lista.forEach(function (ele, index, array){
                     <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
                     <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
                     <i class="fa fa-volume-up px-2">
-                    <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.5">
+                    <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
                     </i>
                 </td>`;
     }
@@ -73,7 +73,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
                     <button class="btn btn-sm btn-success play" data-secuencia="${secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
                     <button class="btn btn-sm btn-danger stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
                     <i class="fa fa-volume-up px-2"></i>
-                    <input type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.5">
+                    <input type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
                 </td></tr>`;
     }
     
@@ -112,48 +112,59 @@ $(".tabla tbody tr td:first-child").click(function(event) {
 function botonPlay(boton,input){
     $(boton).click(function(event) {
         var titulo = $(this).parents("tr").children('td:first-child').text()
-
         var boton = $(this);
         var archivo = boton.attr("data-secuencia");
         var index = $(this).attr("data-index");
+            let play = $("#Secuencia").val();
         //console.log(titulo)
         if (boton.hasClass("play")) {
-            $(".tit-playing").html("<b>"+titulo+"</b>");
-            $(".btn-cont-playing").click()
-            const miAudio = new Audio('msc/'+archivo);
 
-            miAudio.play()
+            if (play == "0") {
+                $("#Secuencia").val("1")
+                const miAudio = new Audio('msc/'+archivo);
 
-            $(".cont-reproduciendo .collapse").addClass('show')
+                $(".tit-playing").html("<b>"+titulo+"</b>");
+                $(".btn-cont-playing").click()
 
-            $(this).siblings("button.stop").removeClass('d-none').click(function(event) {
-                miAudio.pause()
-                $(this).addClass('d-none')
-                $(".cont-reproduciendo .collapse").removeClass('show');
-            });
+                miAudio.play()
+                miAudio.volume = 0.4;
 
+                $(".cont-reproduciendo .collapse").addClass('show')
 
-
-            $(".btn-reproduciendo").click(function(event) {
-                miAudio.pause()
-                $("button.stop").addClass('d-none')
-                $(".cont-reproduciendo .collapse").removeClass('show')
-            });
-
-             var volumenSlider = document.getElementById(input+index);
-                // Evento para cuando cambia el valor del slider
-                volumenSlider.addEventListener('input', function() {
-                    miAudio.volume = this.value;
+                $(this).siblings("button.stop").removeClass('d-none').click(function(event) {
+                    miAudio.pause()
+                    $(this).addClass('d-none')
+                    $(".cont-reproduciendo .collapse").removeClass('show');
+                    $("#Secuencia").val("0")
                 });
 
-            miAudio.onended = function(){
-                $("button.stop").addClass('d-none')
-                $(".cont-reproduciendo .collapse").removeClass('show')
+                $(".btn-reproduciendo").click(function(event) {
+                    miAudio.pause()
+                    $("button.stop").addClass('d-none')
+                    $(".cont-reproduciendo .collapse").removeClass('show')
+                    $("#Secuencia").val("0")
+                });
+
+                var volumenSlider = document.getElementById(input+index);
+                // Evento para cuando cambia el valor del slider
+                    volumenSlider.addEventListener('input', function() {
+                        miAudio.volume = this.value;
+                    });
+
+                miAudio.onended = function(){
+                    $("button.stop").addClass('d-none')
+                    $(".cont-reproduciendo .collapse").removeClass('show')
+                    $("#Secuencia").val("0")
+                }
+            }else{
+                //console.log("ya se esta repruduciendo audio");
+                toastr.warning("Ya se esta repruduciendo una Secuencia!","Secuencias:")
             }
 
-        }else{
+            
 
         }
+
     });
 
 }
@@ -207,7 +218,6 @@ const tabla = document.getElementById('ListaDia');
             tabla.querySelector('tbody').insertBefore(filaArrastrada, next ? filaDestino.nextSibling : filaDestino);
         }
     });
-
 
 
     //const miAudio = new Audio('msc/archivo.mp3'); // Ejemplo: 'sonidos/intro.mp3' o 'audio/musica.wav'

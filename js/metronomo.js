@@ -1,6 +1,6 @@
 //window.AudioContext = window.AudioContext || window.webkitAudioContext;
 var context = new AudioContext();
-var timer, noteCount, counting, accentPitch = 420, offBeatPitch = 250;
+var timer, noteCount, counting, accentPitch = 400, offBeatPitch = 250;
 var delta = 0;
 var curTime = 0.0;
 
@@ -51,7 +51,7 @@ function playNote(t) {
     $(".counter .dot").attr("style", "");
 
     $(".counter .dot").eq(noteCount).css({
-      transform: "translateY(-10px)",
+      transform: "scale(1.2)",
       background: "#F75454"
     });
 }
@@ -114,7 +114,6 @@ $(".ts-top, .ts-bottom").on("change", function() {
   {
     var temp = document.createElement("div");
     temp.className = "dot";
-
     if(i === 0)
       temp.className += " active";
 

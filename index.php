@@ -26,8 +26,8 @@
 <audio src="click.wav" crossorigin="anonymous" id="click" type="audio/wav"></audio>
 
   <div class="container sticky-top">
-    <section class="metronome-container w-100 bg-dark m-0 mt-2 pt-4">
-      <div class="counter"></div>
+    <section class="metronome-container w-100 bg-dark m-0 mt-2">
+      <div class="counter pt-3 pb-0"></div>
       
       <i class="fa fa-cog options-btn"></i>
 
@@ -73,6 +73,7 @@
     <h2 class="verde mb-2 text-center text-muted">Lista de Tiempos y Secuencias</h2>
     <hr>
     <div class="d-flex flex-wrap">
+      <input type="hidden" id="Secuencia" value="0">
       <div class="cont-tabla col-12 col-lg-6 px-2">
         <table class="table table-striped tabla">
           <thead>
