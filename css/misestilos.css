@@ -93,10 +93,9 @@ table.listaDia tr.over { border: 2px dashed #000; }
 
 /* ================ notas ===========================*/
 
+.intro p{color:lime;}
 .estrofa p{position: relative;}
-.estrofa p span{position: absolute;top:-1.2rem;font-weight: bold;color:lime;}
-.cont-tabla-notas{transition:.5s;width: 40%;}
-.cont-canto-notas{transition:.5s;width: 60%;position: absolute;right: 0;}
+.estrofa p b{position: absolute;top:-1.2rem;font-weight: bold;color:#0dcaf0;}
 .btn-maximizar{
   position: absolute;
 }
