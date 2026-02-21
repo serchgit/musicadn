@@ -9,13 +9,34 @@ Lista.forEach(function (ele, index, array){
     if(ele.Secuencia === undefined){
         fila+=`<td class="text-center"> - </td>`;
     }else{
-        fila+=`<td class="text-center d-flex align-items-center secu" data-secuencia="${ele.Secuencia}" data-index="${index}">
-                    <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
-                    <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
-                    <i class="fa fa-volume-up px-2">
-                    <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
-                    </i>
-                </td>`;
+
+        if (Array.isArray(ele.Secuencia)) {
+            fila+=`<td class="text-center d-flex align-items-center secu" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}">
+                    <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}"><i class="fa fa-play"></i></button>
+                    <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                        <i class="fa fa-volume-up px-2">
+                        <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
+                        </i>
+                    <div class="dropdown">
+                      <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">`;
+                        ele.Secuencia.forEach(function (sec,index){
+                            //console.log(sec)
+                            var option  = "<li class='dropdown-item' data-archivo='"+sec.Archivo+"'>"+sec.Descripcion+"</li>";
+                            fila += option;
+
+                        })
+                    fila += `</ul></td>`;
+        }else{
+            fila+=`<td class="text-center d-flex align-items-center secu" data-secuencia="${ele.Secuencia}" data-index="${index}">
+                        <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
+                        <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                        <i class="fa fa-volume-up px-2">
+                        <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
+                        </i>
+                    </td>`;
+        }
     }
     fila+="</tr>";
       $(".tabla tbody").append(fila);
@@ -57,6 +78,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+
     var titulo = $(this).text();
     var tiempo = $(this).siblings("td.tiempo").text();
     var secuencia = $(this).siblings("td.secu").attr("data-secuencia");
@@ -72,8 +94,9 @@ $(".tabla tbody tr td:first-child").click(function(event) {
         item+= `<td data-secuencia="${secuencia}" class="text-center d-flex align-items-center">
                     <button class="btn btn-sm btn-success play" data-secuencia="${secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
                     <button class="btn btn-sm btn-danger stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
-                    <i class="fa fa-volume-up px-2"></i>
-                    <input type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
+                    <i class="fa fa-volume-up px-2">
+                        <input class="ms-1" type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
+                    </i>
                 </td></tr>`;
     }
     
@@ -158,7 +181,12 @@ function botonPlay(boton,input){
                 }
             }else{
                 //console.log("ya se esta repruduciendo audio");
-                toastr.warning("Ya se esta repruduciendo una Secuencia!","Secuencias:")
+                if (document.getElementById('toast-container')) {
+
+                }else{
+                    toastr.warning("Ya se esta repruduciendo una Secuencia!","Secuencias:")
+
+                }
             }
 
             

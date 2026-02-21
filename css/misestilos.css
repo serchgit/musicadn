@@ -46,8 +46,11 @@ table thead tr{background:#e2ad1b;color:#fff;}
 }
 .dataTables_paginate span a:first-child{border-radius: 4px 0 0 4px;}
 .dataTables_paginate span a:last-child{border-radius: 0 4px 4px 0;}
-table tbody tr td input[type=range]{width: 6rem;}
-
+table tbody tr td input[type=range]{width: 5.5rem;}
+button.dropdown-toggle:after{margin-left: 0;}
+ul.dropdown-menu li{
+  cursor:pointer;
+}
 .cont-tabla{border-right: 2px solid darkred}
 
 .btn-tempo{
