@@ -18,7 +18,7 @@ Lista.forEach(function (ele, index, array){
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
                     <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
                       </button>
                       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">`;
                         ele.Secuencia.forEach(function (sec,index){
@@ -99,7 +99,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
                             <input class="ms-1" type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                            <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
                                   </button>
                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">`;
                             Lista[index].Secuencia.forEach(function (sec,index){

@@ -3,7 +3,7 @@ var context = new AudioContext();
 var timer, noteCount, counting, accentPitch = 400, offBeatPitch = 250;
 var delta = 0;
 var curTime = 0.0;
-
+var clickActive = new Audio("click.wav")
 
 // Load up dots on pageload
 $("document").ready(function() {
