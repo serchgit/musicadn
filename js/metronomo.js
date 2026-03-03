@@ -1,9 +1,10 @@
 //window.AudioContext = window.AudioContext || window.webkitAudioContext;
 var context = new AudioContext();
-var timer, noteCount, counting, accentPitch = 400, offBeatPitch = 250;
+var timer, noteCount, counting, accentPitch = 600, offBeatPitch = 350;
 var delta = 0;
 var curTime = 0.0;
-var clickActive = new Audio("click.wav")
+var click = new Audio("click.wav")
+var clickActive = new Audio("click2.wav")
 
 // Load up dots on pageload
 $("document").ready(function() {

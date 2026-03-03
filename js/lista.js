@@ -120,6 +120,8 @@ let Lista = [
 	{"Titulo":"Gloriosa Cruz","Tiempo":"90","Size":"4"},
 	{"Titulo":"Manda lluvia","Tiempo":"110","Size":"4"},
 	{"Titulo":"Al estar ante ti","Tiempo":"144","Size":"4"},
+	{"Titulo":"En totalidad a ti","Tiempo":"115","Size":"4"},
+	{"Titulo":"Entra en la presencia","Tiempo":"132","Size":"4"},
 	{"Titulo":"Te daré lo mejor","Tiempo":"106","Secuencia":"TeDareLoMejor-Sec1.mp3","Size":"4"},
 	{"Titulo":"Los muros caerán","Tiempo":"152","Secuencia":"LosMurosCaeran-Sec1.mp3","Size":"4"},
 	{"Titulo":"Santo y Poderoso","Tiempo":"115","Secuencia":"SantoyPoderoso-Sec1.mp3","Size":"4"},

@@ -27,6 +27,7 @@ form label{
 .listaPortaP li span{
   font-weight: 400;
 }
+.navbar .navbar-nav input{width: 3rem;text-align: center;}
 
 /* ============== estilos tabla ==================*/
 table thead tr{background:#e2ad1b;color:#fff;}
@@ -127,4 +128,9 @@ table.listaDia tr.over { border: 2px dashed #000; }
   .play-btn, .tap-btn{
     width: 45% !important;
   }
+  .controls-sm input[type=text]{width: 3rem;text-align: center;}
+  .controls label, .cont-controls{
+    display: none !important;
+  }
+  .controls-sm, .controls-sm .cont-controls{display: block !important;}
 }
