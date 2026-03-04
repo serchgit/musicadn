@@ -196,10 +196,12 @@ header {
     }
     
     .play-btn {
-      width: 20%;
+      position: relative;
+      width: 3.5rem;
+      height: 3.5rem;
       background: #D6E26D;
-      border: 0px;
-      border-radius: 5px;
+      border: 1px solid;
+      border-radius: 50%;
       padding: 12px;
       color: darken(#D6E26D, 50%);
       transition: background 0.3s;

@@ -132,7 +132,7 @@ if($(this).data("what") === "pause")
   counting = false;
   window.clearInterval(timer);
   $(".counter .dot").attr("style", "");
-  $(this).data("what", "play").attr("style","").text("Play");
+  $(this).data("what", "play").attr("style","").html("<i class='fa fa-play'></i>");
 }
 else {
   // ====== Play ====== //
@@ -150,6 +150,6 @@ if( $("#timer-check").is(":checked") )
   $(this).data("what", "pause").css({
     background: "#F75454",
     color: "#FFF"
-  }).text("Stop");
+  }).html("<i class='fa fa-stop'></i>");
 }
 });
