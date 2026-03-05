@@ -62,7 +62,7 @@
           <div class="alert alert-info rounded-0 d-flex justify-content-center align-items-center" role="alert">
             <p class="mb-0">
               Reproduciendo: <span class="tit-playing"><b>Nombre Secuencia</b></span>
-              <h5 class="tipo-Secuencia ms-3 mb-0"></h5>
+              <h5 class="tipo-Secuencia mb-0"></h5>
             </p>
             <button class="btn-reproduciendo btn btn-sm btn-danger ms-3" title="Detener Secuencia"><i class="fa fa-stop"></i></button>
           </div>

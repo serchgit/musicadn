@@ -169,8 +169,9 @@ function botonPlay(boton,input){
 
                 $(".tit-playing").html("<b>"+titulo+"</b>");
                 if (tipoSecu == undefined) {
+                    $(".tipo-Secuencia").html("");
                 }else{
-                    $(".tipo-Secuencia").html("<span class='badge bg-info'>"+tipoSecu+"</span>");
+                    $(".tipo-Secuencia").html("<span class='badge bg-info ms-3'>"+tipoSecu+"</span>");
                 }
                 $(".btn-cont-playing").click()
 
