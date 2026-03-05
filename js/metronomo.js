@@ -150,6 +150,6 @@ if( $("#timer-check").is(":checked") )
   $(this).data("what", "pause").css({
     background: "#F75454",
     color: "#FFF"
-  }).html("<i class='fa fa-stop'></i>");
+  }).html("<i class='fa fa-stop text-white'></i>");
 }
 });

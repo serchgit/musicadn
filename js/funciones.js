@@ -17,10 +17,10 @@ Lista.forEach(function (ele, index, array){
                         <i class="fa fa-volume-up px-2">
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
-                    <div class="dropdown">
-                      <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
+                    <div class="dropdown" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
+                      <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdown${index}" data-bs-toggle="dropdown" aria-expanded="false">
                       </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">`;
+                      <ul class="dropdown-menu" aria-labelledby="dropdown${index}">`;
                         ele.Secuencia.forEach(function (sec,index){
                             //console.log(sec)
                             var option  = "<li class='dropdown-item' data-archivo='"+sec.Archivo+"'>"+sec.Descripcion+"</li>";
@@ -157,6 +157,7 @@ function botonPlay(boton,input){
         var titulo = $(this).parents("tr").children('td:first-child').text()
         var boton = $(this);
         var archivo = boton.attr("data-secuencia");
+        var tipoSecu = boton.attr("data-tipoSec");
         var index = $(this).attr("data-index");
             let play = $("#Secuencia").val();
         //console.log(titulo)
@@ -167,6 +168,10 @@ function botonPlay(boton,input){
                 const miAudio = new Audio('msc/'+archivo);
 
                 $(".tit-playing").html("<b>"+titulo+"</b>");
+                if (tipoSecu == undefined) {
+                }else{
+                    $(".tipo-Secuencia").html("<span class='badge bg-info'>"+tipoSecu+"</span>");
+                }
                 $(".btn-cont-playing").click()
 
                 miAudio.play()
@@ -242,11 +247,15 @@ function BtnTempo(button){
 
 function cambiarSecuencia(li,botones){
     $(li).click(function(event) {
+        let tipoSec = $(this).text();
         let archivo = $(this).attr("data-archivo");
         console.log(archivo)
         let divPadre = $(this).closest('div.dropdown');
         let btns = $(divPadre).siblings('button');
-        $(btns).attr("data-secuencia",archivo)
+        $(btns).attr({
+            "data-secuencia": archivo,
+            "data-tipoSec": tipoSec
+        });
     });
 }
 

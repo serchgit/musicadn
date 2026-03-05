@@ -47,7 +47,7 @@
           Timer: <input type="text" value="60" class="timer ms-1" />
         </div>
 
-        <button class="btn play-btn"><i class="fa fa-play"></i></button>
+        <button class="btn play-btn btn-secondary text-dark"><i class="fa fa-play"></i></button>
         <button class="btn btn-secondary tap-btn">Tap</button>
       </div>
       
@@ -60,7 +60,10 @@
     <div class="cont-reproduciendo text-center">
         <div class="collapse" id="reproduciendo">
           <div class="alert alert-info rounded-0 d-flex justify-content-center align-items-center" role="alert">
-            <p class="mb-0">Reproduciendo Secuencia: <span class="tit-playing"><b>Nombre Secuencia</b></span></p>
+            <p class="mb-0">
+              Reproduciendo: <span class="tit-playing"><b>Nombre Secuencia</b></span>
+              <h5 class="tipo-Secuencia ms-3 mb-0"></h5>
+            </p>
             <button class="btn-reproduciendo btn btn-sm btn-danger ms-3" title="Detener Secuencia"><i class="fa fa-stop"></i></button>
           </div>
         </div>

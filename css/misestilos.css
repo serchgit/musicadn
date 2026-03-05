@@ -31,12 +31,12 @@ form label{
 .play-btn:before{
   content: "";
   position: absolute;
-  width: 3.8rem;
-  height:3.8rem;
+  width: 57px;
+  height:57px;
   border-radius: 50%;
   border: 3px solid #4d4d4d;
-  left: -3px;
-  top: -3px;
+  left: -1px;
+  top: -1px;
 }
 /* ============== estilos tabla ==================*/
 table thead tr{background:#e2ad1b;color:#fff;}
