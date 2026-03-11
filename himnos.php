@@ -36,14 +36,7 @@
             </tbody>
           </table>
         </div>
-      <div class="col-7 bg-dark p-2">
-        <p class="titulo text-warning text-center">Titulo</p>
-        <div class="intro">
-          
-        </div>
-        <div class="estrofa">
-          
-        </div>
+      <div class="contenedor col-7 bg-dark p-3" id="contenedor">
       </div>
     </div>
   </section>

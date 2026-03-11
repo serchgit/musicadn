@@ -143,3 +143,14 @@ table.listaDia tr.over { border: 2px dashed #000; }
   }
   .controls-sm, .controls-sm .cont-controls{display: block !important;}
 }
+
+/* ================ himnos ======================*/
+.estrofa, .coro{
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.estrofa span, .coro span{
+  color: coral;
+  font-weight: 600;
+}

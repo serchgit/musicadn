@@ -43,8 +43,8 @@
           Timer: <input type="text" value="60" class="timer ms-1" />
         </div>
 
-        <button class="btn btn-secondary tap-btn">Tap</button>
         <button class="btn play-btn">Play</button>
+        <button class="btn btn-secondary tap-btn">Tap</button>
       </div>
       <div class="options">
         <i class="fa fa-caret-down up"></i>
@@ -66,24 +66,40 @@
           </table>
         </div>
       <div class="cont-canto-notas bg-dark pt-2 col-12 col-lg-8">
-        <h4 class="titulo text-warning text-center">La casa de Dios</h4>
+        <h3 class="titulo text-warning text-center">La casa de Dios</h3>
         <div class="cont-secu alert-warning d-flex align-items-center justify-content-center py-2 mb-2">
           <div class="d-flex align-items-center">
             <label class="me-3">Secuencia</label>
             <button class="btn btn-sm btn-success"><i class="fa fa-play"></i></button>
           </div>
         </div>
-        <div class="intro text-white border-top border-bottom border-info text-center">
-          <small class="text-success">Intro</small>
-          <p class="fw-bold text-center mb-0 pb-2">
-            D &emsp;&emsp; A&emsp;&emsp; Bm &emsp;&emsp; A &emsp;&emsp; | &emsp;&emsp;
-            D &emsp;&emsp; A &emsp;&emsp; G
-          </p>
-        </div>
-        <div class="estrofa text-white mt-4 px-3">
-          <p>Mej<b>D</b>or es un d<b>A</b>ía en la <b>Bm</b>casa de D<b>G</b>ios</p>
-          <p>Pref<b>D</b>iero un rinc<b>A</b>ón en la <b>Bm</b>casa de Di<b>G</b>os</p>
-          <p>Que <b>D</b>todo el pa<b>A</b>lacio de un r<b>Bm</b>ey,&emsp;&emsp; <b>G</b></p> <p>que t<b>D</b>odo el pa<b>A</b>lacio de un r<b>G</b>ey</p>
+        <div class="canto">
+          <div class="intro text-white border-top border-bottom border-info text-center">
+            <small class="text-success">Intro</small>
+            <p class="fw-bold text-center mb-0 pb-2">
+              D &emsp;&emsp; A&emsp;&emsp; Bm &emsp;&emsp; A &emsp;&emsp; | &emsp;&emsp;
+              D &emsp;&emsp; A &emsp;&emsp; G
+            </p>
+          </div>
+          <div class="estrofa text-white mt-4 px-3">
+            <p>Mej<b>D</b>or es un d<b>A</b>ía en la <b>Bm</b>casa de D<b>G</b>ios</p>
+            <p>Pref<b>D</b>iero un rinc<b>A</b>ón en la <b>Bm</b>casa de Di<b>G</b>os</p>
+            <p>Que <b>D</b>todo el pa<b>A</b>lacio de un r<b>Bm</b>ey, &emsp;&emsp;<b>G</b></p>
+            <p>Que t<b>D</b>odo el pa<b>A</b>lacio de un r<b>G</b>ey</p>
+            
+            <p class="mt-5">Ven conm<b>D</b>igo a la casa de Di<b>A</b>os</p>
+            <p>Celebr<b>Bm</b>aremos juntos su am<b>G</b>or</p>
+            <p>Haremos fi<b>D</b>esta en honor de aqu<b>A</b>el que nos am<b>G</b>o</p>
+            <p>Estando aqu<b>D</b>i en la casa de Di<b>A</b>os</p>
+            <p>Alegra<b>Bm</b>remos juntos su am<b>G</b>or</p>
+            <p>Le brinda<b>D</b>remos ofrenda de o<b>A</b>bediencia y am<b>G</b>or</p>
+            <p>En la casa de Di<b>D &emsp;&emsp;A &emsp;&emsp;Bm &emsp;&emsp; G</b>os</p>
+
+            <p class="mt-5">A<b>D</b>rde mi <b>A</b>alma, <b>Bm</b>arde de am<b>G</b>or</p>
+            <p>P<b>D</b>or aquel que <b>A</b>me dió la v<b>G</b>ida</p>
+            <p>Por e<b>D</b>so le anh<b>A</b>ela <b>Bm</b>mi coraz<b>G</b>ón an<b>D</b>hela de <b>A</b>su compa<b>Bm &emsp;&emsp; G</b>ñía</p>
+            <p>Anh<b>D</b>ela de <b>A</b>su compañ<b>G</b>ía</p>
+          </div>
         </div>
       </div>
     </div>

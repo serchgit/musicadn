@@ -86,7 +86,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
     //var size = $(this).siblings('td.tiempo').children("button").attr("data-size");
     //console.log(index)
     var item = `<tr data-index="${index}" draggable="true">
-                    <td><button class='btn btn-sm btn-outline-danger me-2' data-toggle='tooltip' data-bs-placement='right' title='Quitar de la lista'><i class='fa fa-trash'></i></button>"${Lista[index].Titulo}"</td>
+                    <td><button class='btn btn-sm btn-outline-danger me-2' data-toggle='tooltip' data-bs-placement='right' title='Quitar de la lista'><i class='fa fa-trash'></i></button>${Lista[index].Titulo}</td>
                     <td class="text-danger font-weight-bold"><button class="btn btn-sm btn-primary btn-tempo" data-size="${Lista[index].Size}">${Lista[index].Tiempo}</button></td>`;
     if (Lista[index].Secuencia == undefined) {
         item+= "<td class='text-center'><button class='btn btn-sm'> - </td></tr>";
@@ -98,8 +98,8 @@ $(".tabla tbody tr td:first-child").click(function(event) {
                         <i class="fa fa-volume-up px-2">
                             <input class="ms-1" type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false"data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
+                        <div class="dropdown" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
+                            <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
                                   </button>
                           <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">`;
                             Lista[index].Secuencia.forEach(function (sec,index){

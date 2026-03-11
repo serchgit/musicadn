@@ -5,7 +5,7 @@ $(function () {
     
 ListaH.forEach(function (ele, index, array){
     
-      var fila ="<tr data-index="+index+"><td data-toggle='tooltip' data-bs-placement='right' title='Agregar'>"+ele.Titulo+"</td><td class='text-center text-danger tiempo'>"+ele.hVictoria+"</td>";
+      var fila ="<tr data-index="+index+" data-letra="+ele.letra+"><td data-toggle='tooltip' data-bs-placement='right' title='Agregar'>"+ele.Titulo+"</td><td class='text-center text-danger tiempo'>"+ele.hVictoria+"</td>";
             fila+="<td>"+ele.Tono+"</td>"
     fila+="</tr>";
       $(".tabla-himnario tbody").append(fila);
@@ -31,3 +31,14 @@ ListaH.forEach(function (ele, index, array){
           //{ extend: 'copyHtml5', text: 'Copiar', title: ''}
         //]
       });
+
+        $(".tabla-himnario tr").click(function(event) {
+            var index = $(this).attr("data-index");
+            var himno = $(this).children("td:first-child").text();
+            
+            fetch("himnos/"+himno.replace(/\s/g, '')+".html")
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("contenedor").innerHTML = data;
+              });
+        });
