@@ -143,6 +143,8 @@ let Lista = [
 	{"Titulo":"Gracias Cristo (Hillsong)","Tiempo":"158","Size":"4"},
 	{"Titulo":"Amarte sólo a ti","Tiempo":"70","Size":"4"},
 	{"Titulo":"Oh moradora (alas de águila)","Tiempo":"130","Size":"4"},
+	{"Titulo":"Alaba","Tiempo":"140","Size":"4"},
+	{"Titulo":"Eres Rey de los cielos","Tiempo":"168","Size":"4"},
 	{"Titulo":"Te daré lo mejor","Tiempo":"106","Secuencia":"TeDareLoMejor-Sec1.mp3","Size":"4"},
 	{"Titulo":"El Señor es mi Rey","Tiempo":"153","Secuencia":"ElSenorEsMiReyMSM.mp3","Size":"4"},
 	{"Titulo":"Los muros caerán","Tiempo":"152","Secuencia":"LosMurosCaeran-Sec1.mp3","Size":"4"},
