@@ -4,7 +4,7 @@
     <label class="text-white me-3 border-end pe-2 controls-sm d-none">BPM:
       <span class="ms-1">
         <i class="fa fa-minus bpm-minus"></i>
-        <input type="text" value="120" class="bpm-input" />
+        <input type="text" value="120" class="bpm-input-mov" />
         <i class="fa fa-plus bpm-plus"></i>
       </span>
     </label>
@@ -19,7 +19,7 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item controls-sm d-none pt-3 text-center">
           <div class="cont-controls text-white form-check d-none">
-            <input type="checkbox" id="timer-check" />
+            <input type="checkbox" id="timer-check-mov" />
             <label for="timer-check"></label>
             
             Timer: <input type="text" value="60" class="timer ms-1" />
