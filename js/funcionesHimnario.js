@@ -34,9 +34,8 @@ ListaH.forEach(function (ele, index, array){
 
         $(".tabla-himnario tr").click(function(event) {
             var index = $(this).attr("data-index");
-            var himno = $(this).children("td:first-child").text();
             
-            fetch("himnos/"+himno.replace(/\s/g, '')+".html")
+            fetch("himnos/himno"+index+".html")
               .then(response => response.text())
               .then(data => {
                 document.getElementById("contenedor").innerHTML = data;
