@@ -10,5 +10,22 @@ let ListaH = [
 	{"Titulo":"Voy feliz al dulce hogar","hVictoria":"323","Tono":"Ab"},
 	{"Titulo":"Oh, mi corazón rebosa","hVictoria":"421","Tono":"C"},
 	{"Titulo":"Gozandome yo voy","hVictoria":"418","Tono":"C"},
-	{"Titulo":"Yo me siento hoy gosozo","hVictoria":"419","Tono":"D"}
+	{"Titulo":"Yo me siento hoy gosozo","hVictoria":"419","Tono":"D"},
+	{"Titulo":"Oigo Decir","hVictoria":"-","Tono":"Bb"},
+	{"Titulo":"Grande gozo hay en mi alma","hVictoria":"293","Tono":"Ab"},
+	{"Titulo":"Cómo podré estar triste?","hVictoria":"-","Tono":"Db"},
+	{"Titulo":"A donde iré?","hVictoria":"-","Tono":"G"},
+	{"Titulo":"La senda ancha dejaré","hVictoria":"-","Tono":"G"},
+	{"Titulo":"Todo a Cristo yo me rindo","hVictoria":"211","Tono":"D"},
+	{"Titulo":"Me hirió el pecado","hVictoria":"-","Tono":"E"},
+	{"Titulo":"Oh Dios visitanos","hVictoria":"139","Tono":"F"},
+	{"Titulo":"Llena de amor mi camino","hVictoria":"-","Tono":"Ab"},
+	{"Titulo":"Somos soldados de la lid","hVictoria":"-","Tono":"F"},
+	{"Titulo":"El sabe como","hVictoria":"-","Tono":"Eb"},
+	{"Titulo":"Oh proclamad con alegría","hVictoria":"126","Tono":"F"},
+	{"Titulo":"Yo espero el día alegre","hVictoria":"113","Tono":"G"},
+	{"Titulo":"Oh, cantadmelas otra vez","hVictoria":"45","Tono":"G"},
+	{"Titulo":"Firmes y adelante","hVictoria":"-","Tono":"E"},
+	{"Titulo":"Dad al Padre toda gloria","hVictoria":"1","Tono":"Eb"},
+	{"Titulo":"El Rey ya viene","hVictoria":"-","Tono":"A"}
 ];
