@@ -9,7 +9,7 @@
       </span>
     </label>
     <label class="text-white pe-2 border-end controls-sm d-none">
-            Beat: <input type="text" value="4" class="ts-top ms-1" id="ts-top" />
+            Beat: <input type="text" value="4" class="ts-topMov ms-1" id="ts-topMov" />
           </label>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
