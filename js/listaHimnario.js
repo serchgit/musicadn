@@ -54,5 +54,7 @@ let ListaH = [
 	{"Titulo":"Quieres ser salvo?","hVictoria":"196","Tono":"Bb"},
 	{"Titulo":"Un día Cristo volverá","hVictoria":"117","Tono":"Ab"},
 	{"Titulo":"Día de victoria","hVictoria":"115","Tono":"Db"},
-	{"Titulo":"Los caminos fatigados","hVictoria":"-","Tono":"Bb"}
+	{"Titulo":"Los caminos fatigados","hVictoria":"-","Tono":"Bb"},
+	{"Titulo":"Hubo quien por mis culpas","hVictoria":"93","Tono":"F"},
+	{"Titulo":"En el monte calvario","hVictoria":"474","Tono":"Bb"}
 ];
