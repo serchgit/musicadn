@@ -153,7 +153,7 @@ let Lista = [
 	{"Titulo":"El Sacrificio","Tiempo":"147","Size":"4"},
 	{"Titulo":"Solo me imagino","Tiempo":"146","Size":"4"},
 	{"Titulo":"Dios de Pactos","Tiempo":"136","Size":"4"},
-	{"Titulo":"Cuan grande es El (Himno)","Tiempo":"136","Size":"3"},
+	{"Titulo":"Cuan grande es El (Himno)","Tiempo":"136","Size":"4"},
 	{"Titulo":"Te doy gloria","Tiempo":"136","Size":"4"},
 	{"Titulo":"Los enemigos de Jehová","Tiempo":"152","Size":"4"},
 	{"Titulo":"Al borde (Exáltate)","Tiempo":"112","Size":"4"},
