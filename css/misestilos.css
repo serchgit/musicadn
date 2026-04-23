@@ -149,8 +149,36 @@ table.listaDia tr.over { border: 2px dashed #000; }
   color: #fff;
   text-align: center;
   font-size: 1rem;
+  position: relative;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+.estrofa{background: #19643a;}
+.coro{background: #7a3605;}
+.estrofa span, .coro span{
+  color: blanchedalmond;
+  font-weight: 600;
 }
 .estrofa span, .coro span{
-  color: coral;
-  font-weight: 600;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: gray;
+  width: 3rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+.coro span{
+  font-size: 1.2rem;
+}
+span i{
+  transform: rotate(-90deg);
+}
+p.estrofa br:nth-child(2), p.coro br:nth-child(2){
+  display: none;
 }

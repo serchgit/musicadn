@@ -24,6 +24,46 @@
   <section class="container bienvenida bg-light mt-3 p-2">
     <hr>
     <div class="d-flex">
+      <div class="contenedor col-7 bg-dark p-3" id="contenedor">
+        <h4 class="text-info text-center ">Bienaventurados son</h4>
+        <p class="text-warning text-center">Bb - No. HV 207</p>
+        <p class="estrofa">
+          <span>1</span><br>
+          Bienaventurados son los de limpio corazón<br>
+          Que no aman el tesoro terrenal,<br>
+          De tranquilidad y paz gozan cada día más,<br>
+          Y del cielo el gozo tienen ya en sí.<br>
+        </p>
+        <p class="coro">
+          <span><i>CORO</i></span><br>
+          ¡Oh cantemos aleluya!<br>
+          Sí, de todo corazón;<br>
+          Por amor al Salvador, a su nombre dad loor,<br>
+          Y por siempre cantaremos de su amor.<br>
+        </p>
+        <p class="estrofa">
+          <span>2</span><br>
+          Grande dicha y favor me concede mi Señor,<br>
+          Por su sangre que vertió por mí en la cruz;<br>
+          Soy guardado siempre fiel por la fe que tengo en El,<br>
+          Y me regocijo andando en la luz.
+        </p>
+        <p class="estrofa">
+          <span>3</span><br>
+          Al Señor obedecer y su Espíritu tener<br>
+          Es un verdadero cielo en mi ser<br>
+          Y por su inmenso amor hacia el pobre pecador<br>
+          Cantaré sus alabanzas mas allá
+        </p>
+        <p class="estrofa">
+          <span>4</span><br>
+          Cuan perfecta es mi paz<br>
+          No anhelo nada más<br>
+          En el mundo que es su luz y su verdad<br>
+          Con mi amado salvador poseído de su amor<br>
+          Estaré contento por la eternidad.
+        </p>
+      </div>
       <div class="cont-tabla col-5 px-2">
           <table class="table table-striped tabla-himnario">
             <thead>
@@ -36,8 +76,6 @@
             </tbody>
           </table>
         </div>
-      <div class="contenedor col-7 bg-dark p-3" id="contenedor">
-      </div>
     </div>
   </section>
   	

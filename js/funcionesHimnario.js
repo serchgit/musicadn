@@ -32,12 +32,13 @@ ListaH.forEach(function (ele, index, array){
         //]
       });
 
-        $(".tabla-himnario tr").click(function(event) {
+        $(".tabla-himnario tbody tr").click(function(event) {
             var index = $(this).attr("data-index");
             
             fetch("himnos/himno"+index+".html")
               .then(response => response.text())
               .then(data => {
                 document.getElementById("contenedor").innerHTML = data;
+                $("p.coro span").html("<i>CORO</i>")
               });
         });
