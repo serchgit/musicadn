@@ -17,7 +17,7 @@ let ListaH = [
 	{"Titulo":"A donde iré?","hVictoria":"-","Tono":"G"},
 	{"Titulo":"La senda ancha dejaré","hVictoria":"-","Tono":"G"},
 	{"Titulo":"Todo a Cristo yo me rindo","hVictoria":"211","Tono":"D"},
-	{"Titulo":"Me hirió el pecado","hVictoria":"90","Tono":"E"},
+	{"Titulo":"Me hirió el pecado","hVictoria":"19","Tono":"E"},
 	{"Titulo":"Oh Dios visitanos","hVictoria":"139","Tono":"F"},
 	{"Titulo":"Llena de amor mi camino","hVictoria":"-","Tono":"Ab"},
 	{"Titulo":"Somos soldados de la lid","hVictoria":"329","Tono":"F"},

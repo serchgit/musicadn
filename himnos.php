@@ -23,8 +23,8 @@
 <?php require_once("header.php");?>
   <section class="container bienvenida bg-light mt-3 p-2">
     <hr>
-    <div class="d-flex">
-      <div class="contenedor col-7 bg-dark p-3" id="contenedor">
+    <div class="d-flex flex-wrap">
+      <div class="contenedor col-12 col-lg-7 bg-dark p-3" id="contenedor">
         <h4 class="text-info text-center ">Bienaventurados son</h4>
         <p class="text-warning text-center">Bb - No. HV 207</p>
         <p class="estrofa">
@@ -64,7 +64,7 @@
           Estaré contento por la eternidad.
         </p>
       </div>
-      <div class="cont-tabla col-5 px-2">
+      <div class="cont-tabla col-12 col-lg-5 px-2">
           <table class="table table-striped tabla-himnario">
             <thead>
               <th class="">TÍTULO</th>
