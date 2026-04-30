@@ -176,5 +176,8 @@ let Lista = [
 	{"Titulo":"Soy sano","Tiempo":"105","Secuencia":"SoySano-Sec1.mp3","Size":"4"},
 	{"Titulo":"Dios eres mío","Tiempo":"157","Secuencia":"DiosEresMio.mp3","Size":"4"},
 	{"Titulo":"Queremos ver","Tiempo":"155","Secuencia":"QueremosVer.mp3","Size":"4"},
-	{"Titulo":"No hay otro nombre","Tiempo":"148","Secuencia":"NoHayOtroNombre.mp3","Size":"4"}
+	{"Titulo":"No hay otro nombre","Tiempo":"148","Secuencia":"NoHayOtroNombre.mp3","Size":"4"},
+	{"Titulo":"Tal como soy","Tiempo":"92","Size":"4"},
+	{"Titulo":"A Cristo, solo a Crito","Tiempo":"145","Size":"4"},
+	{"Titulo":"Temprano yo te buscaré","Tiempo":"123","Size":"4"}
 ];

@@ -38,6 +38,8 @@ form label{
   left: -1px;
   top: -1px;
 }
+.btn-dark{border-bottom: 3px solid gray}
+.btn-dark.stop i, .btn-reproduciendo i{color:cyan;}
 /* ============== estilos tabla ==================*/
 table thead tr{background:#e2ad1b;color:#fff;}
 .tabla tbody tr td:first-child{cursor:pointer;}
@@ -113,8 +115,40 @@ table.listaDia tr.over { border: 2px dashed #000; }
   position: absolute;
 }
 .max{width: 90%;}
-
-
+.counter-cantos{
+  position: absolute;
+  top: -4rem;
+}
+.options-btn-notas{
+  top: -2.5rem !important;
+  right: 4rem !important;
+}
+.options-notas{
+  top: 0 !important;
+  right: 4rem !important;
+}
+.btn-close-notas{
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+}
+.btn-close-notas:before, .btn-close-notas:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  border-top: 2px solid #fff;
+  left:0;
+}
+.btn-close-notas:before{
+  top: 10px;
+  transform: rotate(45deg);
+}
+.btn-close-notas:after{
+  top: 10px;
+  transform: rotate(-45deg);
+}
 @media (max-width: 990px){
   .tap-btn{
     width: 13% !important;

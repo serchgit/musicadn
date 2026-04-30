@@ -12,8 +12,8 @@ Lista.forEach(function (ele, index, array){
 
         if (Array.isArray(ele.Secuencia)) {
             fila+=`<td class="text-center d-flex align-items-center secu" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}">
-                    <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}"><i class="fa fa-play"></i></button>
-                    <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                    <button class="btn btn-sm btn-dark play me-1" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}"><i class="fa fa-play"></i></button>
+                    <button class="btn btn-sm btn-dark stop d-none" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
@@ -30,8 +30,8 @@ Lista.forEach(function (ele, index, array){
                     fila += `</ul></td>`;
         }else{
             fila+=`<td class="text-center d-flex align-items-center secu" data-secuencia="${ele.Secuencia}" data-index="${index}">
-                        <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
-                        <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                        <button class="btn btn-sm btn-dark play me-1" data-secuencia="${ele.Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
+                        <button class="btn btn-sm btn-dark stop d-none" data-secuencia="${ele.Secuencia}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
@@ -93,8 +93,8 @@ $(".tabla tbody tr td:first-child").click(function(event) {
     }else{
         if (Array.isArray(Lista[index].Secuencia)) {
             item+= `<td data-secuencia="${Lista[index].Secuencia[0].Archivo}" class="text-center d-flex align-items-center">
-                        <button class="btn btn-sm btn-success play" data-secuencia="${Lista[index].Secuencia[0].Archivo}" data-index="${index}"><i class="fa fa-play"></i></button>
-                        <button class="btn btn-sm btn-danger stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                        <button class="btn btn-sm btn-dark play" data-secuencia="${Lista[index].Secuencia[0].Archivo}" data-index="${index}"><i class="fa fa-play"></i></button>
+                        <button class="btn btn-sm btn-dark stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                             <input class="ms-1" type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
@@ -111,8 +111,8 @@ $(".tabla tbody tr td:first-child").click(function(event) {
             item += `</ul></td></tr>`;
         }else{
             item += `<td data-secuencia="${Lista[index].Secuencia}" class="text-center d-flex align-items-center">
-                        <button class="btn btn-sm btn-success play" data-secuencia="${Lista[index].Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
-                        <button class="btn btn-sm btn-danger stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                        <button class="btn btn-sm btn-dark play" data-secuencia="${Lista[index].Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
+                        <button class="btn btn-sm btn-dark stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                             <input class="ms-1" type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>`;

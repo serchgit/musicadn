@@ -64,7 +64,7 @@
               Reproduciendo: <span class="tit-playing"><b>Nombre Secuencia</b></span>
               <h5 class="tipo-Secuencia mb-0"></h5>
             </p>
-            <button class="btn-reproduciendo btn btn-sm btn-danger ms-3" title="Detener Secuencia"><i class="fa fa-stop"></i></button>
+            <button class="btn-reproduciendo btn btn-sm btn-dark ms-3" title="Detener Secuencia"><i class="fa fa-stop"></i></button>
           </div>
         </div>
     </div>
