@@ -179,5 +179,7 @@ let Lista = [
 	{"Titulo":"No hay otro nombre","Tiempo":"148","Secuencia":"NoHayOtroNombre.mp3","Size":"4"},
 	{"Titulo":"Tal como soy","Tiempo":"92","Size":"4"},
 	{"Titulo":"A Cristo, solo a Crito","Tiempo":"145","Size":"4"},
-	{"Titulo":"Temprano yo te buscaré","Tiempo":"123","Size":"4"}
+	{"Titulo":"Temprano yo te buscaré","Tiempo":"123","Size":"4"},
+	{"Titulo":"Alabanzas dad a Cristo (lento)","Tiempo":"91","Size":"4"},
+	{"Titulo":"Alabanzas dad a Cristo (rapido)","Tiempo":"128","Size":"4"}
 ];
