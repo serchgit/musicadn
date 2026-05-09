@@ -108,9 +108,24 @@ table.listaDia tr.over { border: 2px dashed #000; }
 
 /* ================ notas ===========================*/
 
-.intro p{color:lime;}
-.estrofa p{position: relative;}
-.estrofa p b{position: absolute;top:-1.2rem;font-weight: bold;color:#0dcaf0;}
+.letraCanto pre{
+  position: relative;
+  margin-bottom: 0;
+  font-size: 1rem;
+  overflow: initial;
+  letter-spacing: 1px;
+}
+.letraCanto pre span{color: cyan;}
+.letraCanto pre.instrumental{
+  font-family: 'Open Sans', sans-serif;
+  border-bottom: 2px dashed coral;
+  line-height: 1rem;
+  color: chartreuse;
+  font-weight: 600;
+  text-align: justify;
+  font-size: 1rem;
+  overflow:inherit;
+}
 .btn-maximizar{
   position: absolute;
 }
@@ -149,34 +164,10 @@ table.listaDia tr.over { border: 2px dashed #000; }
   top: 10px;
   transform: rotate(-45deg);
 }
-@media (max-width: 990px){
-  .tap-btn{
-    width: 13% !important;
-  }
+.tabla-notas tbody tr td:first-child{
+  cursor: pointer;
 }
-
-@media (max-width: 576px){
-  .controls{
-    justify-content: space-around !important;
-    flex-wrap: wrap;
-  }
-  .controls label{
-    width: 50%;
-    margin-bottom: 1rem;
-  }
-  .controls .cont-controls{
-    width: 80%;
-    margin-bottom: 1rem;
-  }
-  .tap-btn{
-    width: 45% !important;
-  }
-  .controls-sm input[type=text]{width: 3rem;text-align: center;}
-  .controls label, .cont-controls{
-    display: none !important;
-  }
-  .controls-sm, .controls-sm .cont-controls{display: block !important;}
-}
+#modalCanto .modal-dialog{max-width: 95%;}
 
 /* ================ himnos ======================*/
 .estrofa, .coro{
@@ -215,4 +206,42 @@ span i{
 }
 p.estrofa br:nth-child(2), p.coro br:nth-child(2){
   display: none;
+}
+
+@media (max-width: 768px){
+  #modalCanto .modal-dialog{max-width: 90%;}
+}
+@media (max-width: 990px){
+  .tap-btn{
+    width: 13% !important;
+  }
+}
+
+@media (max-width: 576px){
+  .controls{
+    justify-content: space-around !important;
+    flex-wrap: wrap;
+  }
+  .controls label{
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .controls .cont-controls{
+    width: 80%;
+    margin-bottom: 1rem;
+  }
+  .tap-btn{
+    width: 45% !important;
+  }
+  .controls-sm input[type=text]{width: 3rem;text-align: center;}
+  .controls label, .cont-controls{
+    display: none !important;
+  }
+  .controls-sm, .controls-sm .cont-controls{display: block !important;}
+  .letraCanto pre{
+    letter-spacing: normal;
+    font-size: .85rem;
+  }
+  #modalCanto{padding-right: 0!important;}
+  .modal-dialog{max-width: 100% !important;}
 }

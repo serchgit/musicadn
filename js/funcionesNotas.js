@@ -5,7 +5,7 @@ $(function () {
     
 Lista.forEach(function (ele, index, array){
     
-      var fila ="<tr data-index="+index+"><td data-bs-toggle='modal' data-bs-target='#modalCanto'>"+ele.Titulo+"</td><td class='text-center text-danger tiempo'><button class='btn btn-sm btn-primary btn-tempo' data-size='"+ele.Size+"'>"+ele.Tiempo+"</button></td>";
+      var fila ="<tr data-index="+index+"><td data-bs-toggle='modal' data-bs-target='#modalCanto'>"+ele.Titulo+"</td><td class='text-center text-danger tiempo' data-size='"+ele.Size+"'>"+ele.Tiempo+"</td>";
     if(ele.Secuencia === undefined){
         fila+=`<td class="text-center"> - </td>`;
     }else{
@@ -144,3 +144,41 @@ function cambiarSecuencia(li,botones){
         });
     });
 }
+
+var myModal = new bootstrap.Modal(document.getElementById('modalCanto'), {
+  keyboard: false
+})
+
+myModal.show()
+
+$(".tabla-notas tbody tr td:first-child").click(function(event) {
+  let titulo = $(this).text();
+  let index = $(this).parent("tr").attr("data-index");
+  let bpm = parseInt($(this).siblings("td.tiempo").text());
+  let size = parseInt($(this).siblings("td.tiempo").attr("data-size"));
+  let _counter = $(".counter");
+  console.log(bpm)
+  $(".titulo").html(titulo);
+  $(".bpm-input").val(bpm);
+  $("#ts-top").val(size);
+    _counter.html("");
+
+          for(var i = 0; i < parseInt($(".ts-top").val(), 10); i++)
+          {
+            var temp = document.createElement("div");
+            temp.className = "dot";
+
+            if(i === 0)
+              temp.className += " active";
+
+            _counter.append( temp );
+          }
+
+
+    fetch("cantos/canto"+index+".html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("letraCanto").innerHTML = data;
+      });
+});
+

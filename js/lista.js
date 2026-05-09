@@ -178,8 +178,12 @@ let Lista = [
 	{"Titulo":"Queremos ver","Tiempo":"155","Secuencia":"QueremosVer.mp3","Size":"4"},
 	{"Titulo":"No hay otro nombre","Tiempo":"148","Secuencia":"NoHayOtroNombre.mp3","Size":"4"},
 	{"Titulo":"Tal como soy","Tiempo":"92","Size":"4"},
-	{"Titulo":"A Cristo, solo a Crito","Tiempo":"145","Size":"4"},
+	{"Titulo":"A Cristo, solo a Cristo","Tiempo":"145","Size":"4"},
 	{"Titulo":"Temprano yo te buscaré","Tiempo":"123","Size":"4"},
 	{"Titulo":"Alabanzas dad a Cristo (lento)","Tiempo":"91","Size":"4"},
-	{"Titulo":"Alabanzas dad a Cristo (rapido)","Tiempo":"128","Size":"4"}
+	{"Titulo":"Alabanzas dad a Cristo (rapido)","Tiempo":"128","Size":"4"},
+	{"Titulo":"Levantate y Salvame","Tiempo":"130","Size":"4"},
+	{"Titulo":"En los montes, en los valles","Tiempo":"106","Secuencia":"EnLosMontes-Sec.mp3","Size":"4"},
+	{"Titulo":"Siento su gloria","Tiempo":"100","Size":"4"},
+	{"Titulo":"De gloria en gloria (Marco B.)","Tiempo":"128","Secuencia":"DeGloriaEnGloria-Sec.mp3","Size":"4"}
 ];
