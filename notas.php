@@ -60,12 +60,11 @@
           <i class="fa fa-cog options-btn options-btn-notas"></i>
 
           <div class="controls d-flex align-items-center justify-content-between py-2">
-            <label>BPM: <span class="ms-1">
-                          <i class="fa fa-minus bpm-minus"></i>
-                          <input type="text" value="120" class="bpm-input" />
-                          <i class="fa fa-plus bpm-plus"></i>
-                        </span>
-            </label>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button type="button" class="btn btn-secondary btn-sm border-0 bpm-minus"><i class="fa fa-minus bpm-minus"></i></button>
+                <input type="text" value="120" class="bpm-input" />
+              <button type="button" class="btn btn-secondary btn-sm border-0 bpm-plus"><i class="fa fa-plus bpm-plus"></i></button>
+            </div>
             <label>
               Beat: <input type="text" value="4" class="ts-top ms-1" id="ts-top" /></label>
 
@@ -90,7 +89,7 @@
       </div>
       <div class="modal-body pt-0">
         <h5 class="modal-title text-warning titulo text-center py-2" id="staticBackdropLabel">Modal title</h5>
-        <div class="alert alert-warning py-2 text-center sticky-top w-50 m-auto d-none" role="alert">
+        <div class="alert alert-warning py-2 text-center sticky-top m-auto d-none" role="alert">
           <label class="mx-3 tituloNotas">Secuencia</label>
           <button class="btn btn-sm btn-success"><i class="fa fa-play"></i></button>
           <i class="fa fa-volume-up px-2">
@@ -99,14 +98,29 @@
         </div>
         <section class="letraCanto d-flex flex-wrap justify-content-center" id="letraCanto">
 <pre class="instrumental col-12 mt-3 pb-2">
-Am    G    F  -  G  X4
+Cm       Bb - G#     Fm
 </pre>
 <div class="col-12 col-lg-11 text-white d-flex flex-wrap">
 <pre class="col-12 col-lg-5">
-  Am  G        F           E
-Alabaremos al Santo de Israel 
+     Cm
+El camino del Señor es perfecto
 </pre>
+<pre class="col-12 col-lg-5">
+La palabra del Señor es poder
+</pre>
+<pre class="col-12 col-lg-6">
+Es el arma y escudo de todos los que en él confían
 
+</pre>
+<pre class="col-12 col-lg-5">
+Cristo es mi fortaleza, es mi escudo
+</pre>
+<pre class="col-12 col-lg-5">
+Con el paso en medio de un batallón
+</pre>
+<pre class="col-12 col-lg-5">
+El adiestra mis manos, me prepara para pelear
+</pre>
         
         </section>
       </div>

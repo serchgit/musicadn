@@ -62,7 +62,9 @@ $(".tabla-notas").dataTable({
         //]
       });
 var playListaG = $(".tabla-notas tbody tr td:last-child button.play");
+
 botonPlay(playListaG,"volumenListG")
+
 function botonPlay(boton,input){
     $(boton).click(function(event) {
         var titulo = $(this).parents("tr").children('td:first-child').text()
@@ -156,11 +158,18 @@ $(".tabla-notas tbody tr td:first-child").click(function(event) {
   let index = $(this).parent("tr").attr("data-index");
   let bpm = parseInt($(this).siblings("td.tiempo").text());
   let size = parseInt($(this).siblings("td.tiempo").attr("data-size"));
+  let sec = $(this).siblings('td.secu').html();
   let _counter = $(".counter");
-  console.log(bpm)
+  console.log(sec)
   $(".titulo").html(titulo);
   $(".bpm-input").val(bpm);
   $("#ts-top").val(size);
+
+  if (sec == undefined) {
+    //console.log("sin secuencia")
+  }else{
+    $("#modalCanto .modal-body .alert").removeClass("d-none").html(sec);
+  }
     _counter.html("");
 
           for(var i = 0; i < parseInt($(".ts-top").val(), 10); i++)
@@ -173,7 +182,10 @@ $(".tabla-notas tbody tr td:first-child").click(function(event) {
 
             _counter.append( temp );
           }
+    $(".alert i input").attr("id","volumenNotas"+index)
+    let playAl = $(".alert button.play");
 
+    botonPlay(playAl,"volumenNotas")
 
     fetch("cantos/canto"+index+".html")
       .then(response => response.text())

@@ -185,5 +185,6 @@ let Lista = [
 	{"Titulo":"Levantate y Salvame","Tiempo":"130","Size":"4"},
 	{"Titulo":"En los montes, en los valles","Tiempo":"106","Secuencia":"EnLosMontes-Sec.mp3","Size":"4"},
 	{"Titulo":"Siento su gloria","Tiempo":"100","Size":"4"},
-	{"Titulo":"De gloria en gloria (Marco B.)","Tiempo":"128","Secuencia":"DeGloriaEnGloria-Sec.mp3","Size":"4"}
+	{"Titulo":"De gloria en gloria (Marco B.)","Tiempo":"128","Secuencia":"DeGloriaEnGloria-Sec.mp3","Size":"4"},
+	{"Titulo":"Oh majestad!","Tiempo":"113","Size":"4"}
 ];

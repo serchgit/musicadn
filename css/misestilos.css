@@ -115,7 +115,7 @@ table.listaDia tr.over { border: 2px dashed #000; }
   overflow: initial;
   letter-spacing: 1px;
 }
-.letraCanto pre span{color: cyan;}
+.letraCanto pre span{color: cyan;position: relative;top: 5px;}
 .letraCanto pre.instrumental{
   font-family: 'Open Sans', sans-serif;
   border-bottom: 2px dashed coral;
@@ -168,6 +168,12 @@ table.listaDia tr.over { border: 2px dashed #000; }
   cursor: pointer;
 }
 #modalCanto .modal-dialog{max-width: 95%;}
+#modalCanto .modal-body .alert-warning{
+  width: fit-content;
+}
+#modalCanto .modal-body .alert-warning button.stop{
+  left: 1rem;
+}
 
 /* ================ himnos ======================*/
 .estrofa, .coro{
@@ -201,7 +207,7 @@ table.listaDia tr.over { border: 2px dashed #000; }
 .coro span{
   font-size: 1.2rem;
 }
-span i{
+p.coro span i{
   transform: rotate(-90deg);
 }
 p.estrofa br:nth-child(2), p.coro br:nth-child(2){
