@@ -97,33 +97,24 @@
           </i>
         </div>
         <section class="letraCanto d-flex flex-wrap justify-content-center" id="letraCanto">
-<pre class="instrumental col-12 mt-3 pb-2">
-Cm       Bb - G#     Fm
+<div class="tonos d-none">
+    <button class="btn btn-sm btn-secondary me-2 active">Gm</button>
+    <button class="btn btn-sm btn-secondary">F#m</button>
+</div>
+<pre class="instrumental col-12 mt-3 pb-2" data-tono="Gm">
+  C - F   G   Em   Am - G   C
 </pre>
-<div class="col-12 col-lg-11 text-white d-flex flex-wrap">
-<pre class="col-12 col-lg-5">
-     Cm
-El camino del Señor es perfecto
-</pre>
-<pre class="col-12 col-lg-5">
-La palabra del Señor es poder
-</pre>
+<div class="col-12 col-lg-11 text-white d-flex flex-wrap" data-tono="Gm">
 <pre class="col-12 col-lg-6">
-Es el arma y escudo de todos los que en él confían
+<span>C                     F</span>
+Mil generaciones, se postran a adorarle
+</pre>
 
-</pre>
-<pre class="col-12 col-lg-5">
-Cristo es mi fortaleza, es mi escudo
-</pre>
-<pre class="col-12 col-lg-5">
-Con el paso en medio de un batallón
-</pre>
-<pre class="col-12 col-lg-5">
-El adiestra mis manos, me prepara para pelear
-</pre>
-        
+
+</div>
+<!-- ============= tono F# =======================-->
+
         </section>
-      </div>
       <div class="modal-footer d-none">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
       </div>

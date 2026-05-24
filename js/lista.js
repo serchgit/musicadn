@@ -39,7 +39,7 @@ let Lista = [
 	{"Titulo":"Cuan grande es Dios","Tiempo":"78","Size":"4"},
 	{"Titulo":"Al estar aquí","Tiempo":"114","Size":"4"},
 	{"Titulo":"A ti","Tiempo":"113","Size":"4"},
-	{"Titulo":"Como el siervo","Tiempo":"118","Size":"4"},
+	{"Titulo":"Como el siervo","Tiempo":"116","Size":"4"},
 	{"Titulo":"Conozco que todo lo puedes","Tiempo":"120","Size":"4"},
 	{"Titulo":"Damos honor a ti","Tiempo":"87","Size":"4"},
 	{"Titulo":"Exáltate","Tiempo":"110","Size":"4"},
@@ -167,7 +167,7 @@ let Lista = [
 	{"Titulo":"Agradecido","Tiempo":"144","Secuencia":"Agradecido-Sec1.mp3","Size":"4"},
 	{"Titulo":"Hossana (Hillsong)","Tiempo":"153","Secuencia":"HossanaHilsong-Sec.mp3","Size":"4"},
 	{"Titulo":"El es el Rey","Tiempo":"133","Secuencia":"ElesElRey-Sec.mp3","Size":"4"},
-	{"Titulo":"Te daré lo mejor","Tiempo":"106","Secuencia":"TeDareLoMejor-Sec1.mp3","Size":"4"},
+	{"Titulo":"Te daré lo mejor","Tiempo":"106","Secuencia":[{"Descripcion":"Secuencia Completa","Archivo":"TeDareLoMejor-Sec1.mp3"},{"Descripcion":"Secuencia Corta","Archivo":"TeDareLoMejor-SecCorta.mp3"},{"Descripcion":"Secuencia Solo","Archivo":"TeDareLoMejor-SecSolo.mp3"}],"Size":"4"},
 	{"Titulo":"El Señor es mi Rey","Tiempo":"153","Secuencia":"ElSenorEsMiReyMSM.mp3","Size":"4"},
 	{"Titulo":"Los muros caerán","Tiempo":"152","Secuencia":"LosMurosCaeran-Sec1.mp3","Size":"4"},
 	{"Titulo":"Santo y Poderoso","Tiempo":"115","Secuencia":"SantoyPoderoso-Sec1.mp3","Size":"4"},
@@ -186,5 +186,9 @@ let Lista = [
 	{"Titulo":"En los montes, en los valles","Tiempo":"106","Secuencia":"EnLosMontes-Sec.mp3","Size":"4"},
 	{"Titulo":"Siento su gloria","Tiempo":"100","Size":"4"},
 	{"Titulo":"De gloria en gloria (Marco B.)","Tiempo":"128","Secuencia":"DeGloriaEnGloria-Sec.mp3","Size":"4"},
-	{"Titulo":"Oh majestad!","Tiempo":"113","Size":"4"}
+	{"Titulo":"Oh majestad!","Tiempo":"113","Size":"4"},
+	{"Titulo":"Clamor de guerra","Tiempo":"150","Size":"4"},
+	{"Titulo":"Pon aceite en mi vida","Tiempo":"138","Size":"4"},
+	{"Titulo":"Revisteme","Tiempo":"108","Size":"4"},
+	{"Titulo":"Dios incomparable","Tiempo":"156","Size":"4"}
 ];

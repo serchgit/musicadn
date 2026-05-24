@@ -59,6 +59,7 @@ table thead tr{background:#e2ad1b;color:#fff;}
 .dataTables_paginate span a:first-child{border-radius: 4px 0 0 4px;}
 .dataTables_paginate span a:last-child{border-radius: 0 4px 4px 0;}
 table tbody tr td input[type=range]{width: 5.5rem;}
+table tbody tr td{vertical-align: middle;}
 button.dropdown-toggle:after{margin-left: 0;}
 ul.dropdown-menu li{
   cursor:pointer;
@@ -126,6 +127,7 @@ table.listaDia tr.over { border: 2px dashed #000; }
   font-size: 1rem;
   overflow:inherit;
 }
+.letraCanto pre.puente{color:#fb81be;}
 .btn-maximizar{
   position: absolute;
 }
@@ -171,9 +173,19 @@ table.listaDia tr.over { border: 2px dashed #000; }
 #modalCanto .modal-body .alert-warning{
   width: fit-content;
 }
+#modalCanto .modal-body .alert-warning{
+  display: flex;
+  align-items: center;
+}
 #modalCanto .modal-body .alert-warning button.stop{
   left: 1rem;
 }
+.tonos{position: absolute;right: 1rem;z-index: 100;}
+.tonos button{
+  width: 3rem;
+}
+.tonos button.active{background-color: #00bcd4;}
+
 
 /* ================ himnos ======================*/
 .estrofa, .coro{
@@ -214,13 +226,19 @@ p.estrofa br:nth-child(2), p.coro br:nth-child(2){
   display: none;
 }
 
-@media (max-width: 768px){
-  #modalCanto .modal-dialog{max-width: 90%;}
+
+@media (min-width: 1080px){
+  .letraCanto div.col-lg-11{width: 67.66667%;}
 }
+
 @media (max-width: 990px){
   .tap-btn{
     width: 13% !important;
   }
+}
+
+@media (max-width: 768px){
+  #modalCanto .modal-dialog{max-width: 90%;}
 }
 
 @media (max-width: 576px){
@@ -250,4 +268,5 @@ p.estrofa br:nth-child(2), p.coro br:nth-child(2){
   }
   #modalCanto{padding-right: 0!important;}
   .modal-dialog{max-width: 100% !important;}
+  .tonos{position: relative;right: auto;}
 }

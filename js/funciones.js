@@ -16,6 +16,7 @@ Lista.forEach(function (ele, index, array){
                     <button class="btn btn-sm btn-dark stop d-none" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
+                        <span class="badge bg-danger mt-2 w-75">${ele.Secuencia[0].Descripcion}</span>
                         </i>
                     <div class="dropdown" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
                       <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdown${index}" data-bs-toggle="dropdown" aria-expanded="false">
@@ -97,6 +98,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
                         <button class="btn btn-sm btn-dark stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                             <input class="ms-1" type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
+                            <span class="badge bg-danger mt-2 w-75">${Lista[index].Secuencia[0].Descripcion}</span>
                         </i>
                         <div class="dropdown" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
                             <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
@@ -176,7 +178,7 @@ function botonPlay(boton,input){
                 $(".btn-cont-playing").click()
 
                 miAudio.play()
-                miAudio.volume = 0.4;
+                miAudio.volume = 0.3;
 
                 $(".cont-reproduciendo .collapse").addClass('show')
 
@@ -253,10 +255,12 @@ function cambiarSecuencia(li,botones){
         console.log(archivo)
         let divPadre = $(this).closest('div.dropdown');
         let btns = $(divPadre).siblings('button');
+        $(divPadre).siblings('i').children("span").text(tipoSec);
         $(btns).attr({
             "data-secuencia": archivo,
             "data-tipoSec": tipoSec
         });
+
     });
 }
 

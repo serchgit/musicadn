@@ -12,10 +12,11 @@ Lista.forEach(function (ele, index, array){
 
         if (Array.isArray(ele.Secuencia)) {
             fila+=`<td class="text-center d-flex align-items-center secu" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}">
-                    <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}"><i class="fa fa-play"></i></button>
-                    <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                    <button class="btn btn-sm btn-dark play me-1" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}"><i class="fa fa-play"></i></button>
+                    <button class="btn btn-sm btn-dark stop d-none" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
+                        <span class="badge bg-danger mt-2 w-75">${ele.Secuencia[0].Descripcion}</span>
                         </i>
                     <div class="dropdown" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
                       <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdown${index}" data-bs-toggle="dropdown" aria-expanded="false">
@@ -30,8 +31,8 @@ Lista.forEach(function (ele, index, array){
                     fila += `</ul></td>`;
         }else{
             fila+=`<td class="text-center d-flex align-items-center secu" data-secuencia="${ele.Secuencia}" data-index="${index}">
-                        <button class="btn btn-sm btn-success play me-1" data-secuencia="${ele.Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
-                        <button class="btn btn-sm btn-danger stop d-none" data-secuencia="${ele.Secuencia}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
+                        <button class="btn btn-sm btn-dark play me-1" data-secuencia="${ele.Secuencia}" data-index="${index}"><i class="fa fa-play"></i></button>
+                        <button class="btn btn-sm btn-dark stop d-none" data-secuencia="${ele.Secuencia}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
                         </i>
@@ -140,6 +141,7 @@ function cambiarSecuencia(li,botones){
         console.log(archivo)
         let divPadre = $(this).closest('div.dropdown');
         let btns = $(divPadre).siblings('button');
+        $(divPadre).siblings('i').children("span").text(tipoSec);
         $(btns).attr({
             "data-secuencia": archivo,
             "data-tipoSec": tipoSec
@@ -151,7 +153,7 @@ var myModal = new bootstrap.Modal(document.getElementById('modalCanto'), {
   keyboard: false
 })
 
-myModal.show()
+//myModal.show()
 
 $(".tabla-notas tbody tr td:first-child").click(function(event) {
   let titulo = $(this).text();
@@ -169,6 +171,7 @@ $(".tabla-notas tbody tr td:first-child").click(function(event) {
     //console.log("sin secuencia")
   }else{
     $("#modalCanto .modal-body .alert").removeClass("d-none").html(sec);
+    cambiarSecuencia(".alert div.dropdown ul li")
   }
     _counter.html("");
 
@@ -191,6 +194,18 @@ $(".tabla-notas tbody tr td:first-child").click(function(event) {
       .then(response => response.text())
       .then(data => {
         document.getElementById("letraCanto").innerHTML = data;
+        cambiarTono();
       });
 });
 
+function cambiarTono(){
+    $("#letraCanto .tonos button").click(function(event) {
+       let tono = $(this).text();
+       console.log(tono)
+       $('[data-tono]').addClass("d-none");
+       $(".tonos button").removeClass('active');
+       $('[data-tono="'+tono+'"]').removeClass("d-none");
+       $(this).addClass('active');
+    });
+}
+cambiarTono();
