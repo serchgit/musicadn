@@ -190,5 +190,7 @@ let Lista = [
 	{"Titulo":"Clamor de guerra","Tiempo":"150","Size":"4"},
 	{"Titulo":"Pon aceite en mi vida","Tiempo":"138","Size":"4"},
 	{"Titulo":"Revisteme","Tiempo":"108","Size":"4"},
-	{"Titulo":"Dios incomparable","Tiempo":"156","Size":"4"}
+	{"Titulo":"Dios incomparable","Tiempo":"156","Size":"4"},
+	{"Titulo":"Cantare","Tiempo":"178","Size":"4"},
+	{"Titulo":"Eres suficiente","Tiempo":"108","Size":"4"}
 ];

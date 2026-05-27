@@ -102,15 +102,16 @@
     <button class="btn btn-sm btn-secondary">F#m</button>
 </div>
 <pre class="instrumental col-12 mt-3 pb-2" data-tono="Gm">
-  C - F   G   Em   Am - G   C
+  Bm    D    A
 </pre>
 <div class="col-12 col-lg-11 text-white d-flex flex-wrap" data-tono="Gm">
-<pre class="col-12 col-lg-6">
-<span>C                     F</span>
-Mil generaciones, se postran a adorarle
+<pre class="col-12 col-lg-6 border-end">
+
 </pre>
 
+<pre class="col-12 col-lg-6 ps-3">
 
+</pre>
 </div>
 <!-- ============= tono F# =======================-->
 

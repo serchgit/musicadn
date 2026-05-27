@@ -61,5 +61,17 @@ let ListaH = [
 	{"Titulo":"Es la oración","hVictoria":"338","Tono":"D"},
 	{"Titulo":"Cuando estes cansado","hVictoria":"256","Tono":"Bb"},
 	{"Titulo":"Que me puede dar perdón?","hVictoria":"189","Tono":"G"},
-	{"Titulo":"Cristo esta buscando","hVictoria":"359","Tono":"Ab"}
+	{"Titulo":"Cristo esta buscando","hVictoria":"359","Tono":"Ab"},
+	{"Titulo":"Trabajad, trabajad!","hVictoria":"362","Tono":"F"},
+	{"Titulo":"Mi Jesús ascendió","hVictoria":"111","Tono":"G"},
+	{"Titulo":"Marcha de triunfo","hVictoria":"-","Tono":"F"},
+	{"Titulo":"Las mujeres trabajan","hVictoria":"-","Tono":"C"},
+	{"Titulo":"Jesús es mi Rey soberano","hVictoria":"447","Tono":"Dd"},
+	{"Titulo":"Hallé un buen amigo","hVictoria":"-","Tono":"F"},
+	{"Titulo":"Cuan grande es El","hVictoria":"17","Tono":"Bb"},
+	{"Titulo":"Busca hermano la promesa","hVictoria":"-","Tono":"D"},
+	{"Titulo":"Exelso Don","hVictoria":"-","Tono":"G"},
+	{"Titulo":"Que mi vida entera esté","hVictoria":"214","Tono":"D"},
+	{"Titulo":"Vino a dar un manantial","hVictoria":"-","Tono":"Ab"},
+	{"Titulo":"Soy soldado de Cristo","hVictoria":"369","Tono":"F"}
 ];

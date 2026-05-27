@@ -1,0 +1,84 @@
+.ancho-etiqueta {
+    width: 100px;
+}
+
+.ancho-boton {
+    width: 100px;
+}
+
+.contenedor-letras {
+    min-height: 30px;
+}
+
+.contenedor-letras-secreto {
+    min-height: 45px;
+}
+
+.titulo-principal {
+    background: #1f1f1f;
+}
+
+.letra {
+    background: #2b8796;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    height: 40px;
+    width: 35px;
+    text-align: center;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    font-size: 25px;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.espacio {
+    display: inline-block;    
+    width: 30px;    
+}
+
+.letra-gane {
+    background: #27a745;    
+}
+
+.letra-perdida {
+    background: #dc3645;
+}
+
+.estilo-imagen {
+    height: 290px;
+}
+
+.bg-morado {
+    background: #612daf;
+}
+
+.borde-morado {
+    border: 1px solid #612daf;
+}
+.errores{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 3rem;
+    bottom: 1rem;
+}
+.errores span{
+    background: red;
+    padding: 6px 10px;
+    color: #fff;
+    border-radius: 4px;
+    margin-right: 1rem;
+}
+#letras_fallidas{
+    background: hotpink;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    min-height: 3rem;
+    text-transform: uppercase;
+}
+.letraDes{background: orangered;}

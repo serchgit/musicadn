@@ -153,7 +153,7 @@ var myModal = new bootstrap.Modal(document.getElementById('modalCanto'), {
   keyboard: false
 })
 
-//myModal.show()
+myModal.show()
 
 $(".tabla-notas tbody tr td:first-child").click(function(event) {
   let titulo = $(this).text();
@@ -169,6 +169,7 @@ $(".tabla-notas tbody tr td:first-child").click(function(event) {
 
   if (sec == undefined) {
     //console.log("sin secuencia")
+    $("#modalCanto .modal-body .alert").addClass("d-none");
   }else{
     $("#modalCanto .modal-body .alert").removeClass("d-none").html(sec);
     cambiarSecuencia(".alert div.dropdown ul li")

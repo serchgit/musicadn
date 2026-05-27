@@ -239,6 +239,8 @@ p.estrofa br:nth-child(2), p.coro br:nth-child(2){
 
 @media (max-width: 768px){
   #modalCanto .modal-dialog{max-width: 90%;}
+  .letraCanto div.col-lg-11 pre{border-right: 0 !important;padding-left: 0 !important;}
+
 }
 
 @media (max-width: 576px){
