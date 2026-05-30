@@ -73,5 +73,6 @@ let ListaH = [
 	{"Titulo":"Exelso Don","hVictoria":"-","Tono":"G"},
 	{"Titulo":"Que mi vida entera esté","hVictoria":"214","Tono":"D"},
 	{"Titulo":"Vino a dar un manantial","hVictoria":"-","Tono":"Ab"},
-	{"Titulo":"Soy soldado de Cristo","hVictoria":"369","Tono":"F"}
+	{"Titulo":"Soy soldado de Cristo","hVictoria":"369","Tono":"F"},
+	{"Titulo":"Oh! jamás nos cansaremos","hVictoria":"3","Tono":"Eb"}
 ];

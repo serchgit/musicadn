@@ -192,5 +192,7 @@ let Lista = [
 	{"Titulo":"Revisteme","Tiempo":"108","Size":"4"},
 	{"Titulo":"Dios incomparable","Tiempo":"156","Size":"4"},
 	{"Titulo":"Cantare","Tiempo":"178","Size":"4"},
-	{"Titulo":"Eres suficiente","Tiempo":"108","Size":"4"}
+	{"Titulo":"Eres suficiente","Tiempo":"108","Size":"4"},
+	{"Titulo":"El Espíritu de Dios esta aqui","Tiempo":"102","Size":"4"},
+	{"Titulo":"Santo es el que vive","Tiempo":"128","Size":"4"}
 ];

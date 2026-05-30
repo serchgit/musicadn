@@ -4,7 +4,7 @@
 
 <head>
   <link rel="shortcut icon" href="" />
-  <title>Lista BPS</title>
+  <title>Notas</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -98,13 +98,13 @@
         </div>
         <section class="letraCanto d-flex flex-wrap justify-content-center" id="letraCanto">
 <div class="tonos d-none">
-    <button class="btn btn-sm btn-secondary me-2 active">Gm</button>
-    <button class="btn btn-sm btn-secondary">F#m</button>
+    <button class="btn btn-sm btn-secondary me-2 active">F#</button>
+    <button class="btn btn-sm btn-secondary">E</button>
 </div>
-<pre class="instrumental col-12 mt-3 pb-2" data-tono="Gm">
-  Bm    D    A
+<pre class="instrumental col-12 mt-3 pb-2" data-tono="F#">
+C#    Bbm7    G#    F#
 </pre>
-<div class="col-12 col-lg-11 text-white d-flex flex-wrap" data-tono="Gm">
+<div class="col-12 col-lg-11 text-white d-flex flex-wrap" data-tono="F#">
 <pre class="col-12 col-lg-6 border-end">
 
 </pre>
@@ -113,6 +113,7 @@
 
 </pre>
 </div>
+
 <!-- ============= tono F# =======================-->
 
         </section>
