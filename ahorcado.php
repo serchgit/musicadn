@@ -17,7 +17,7 @@
   
 </head>
 <style>
-  .contenedor-letras-secreto{min-height: 43vh;}
+  .contenedor-letras-secreto{min-height: 65vh;}
   .row{margin-right: 0;margin-left: 0;--bs-gutter-x: 0;}
 </style>
 
@@ -32,23 +32,23 @@
                 </div>
                 <div id="palabra" class="row justify-content-center align-items-center contenedor-letras-secreto px-5 m-auto">
                 </div>
-                <div class="row" style="position: relative;">
-                    <div class="container my-2 w-25">
-                        <div class="row justify-content-center rounded-top bg-morado text-white">
-                            Letras Fallidas
-                        </div>
-                        <div id="letras_fallidas" class="row align-content-center justify-content-center borde-morado rounded-bottom contenedor-letras">
-                        </div>
-                    </div>
-                    <div class="errores w-25">
-                      
-                    </div>
-                </div>
             </div>
         </div>
 
-        <div class="d-flex justify-content-center bg-dark flex-wrap">
-          <div class="botones my-2 w-100 d-flex justify-content-center">
+        <div class="d-flex justify-content-center align-items-center bg-dark flex-wrap">
+          <div class="botones my-2 d-flex justify-content-center flex-wrap w-50">
+            <div class="w-100" style="position: relative;">
+                <div class="container my-2 w-75">
+                    <div class="row justify-content-center rounded-top bg-morado text-white">
+                        Letras Fallidas
+                    </div>
+                    <div id="letras_fallidas" class="row align-content-center justify-content-center borde-morado rounded-bottom contenedor-letras">
+                    </div>
+                </div>
+                <div class="errores w-25">
+                  
+                </div>
+            </div>
             <button class="btn btn-lg btn-warning me-2" data-ancho="68">1
               <input type="hidden" name="" id="texto1" value="PEDIS Y NO RECIBIS PORQUE PEDIS MAL">
             </button>
@@ -81,8 +81,8 @@
             </button>
             
           </div>
-            <div class="p-2 w-50">
-                <div class="row">
+            <div class="p-2 w-50 d-flex align-items-center">
+                <div class="row w-75">
                     <div class="input-group mb-2 d-none">
                         <div class="input-group-prepend">
                             <span class="input-group-text ancho-etiqueta bg-success text-white"
@@ -112,7 +112,7 @@
                         <button id="boton_adivinar" class="btn btn-warning ancho-boton" disabled>Adivinar</button>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center ms-3">
                     <button id="boton_finalizar" class="btn btn-danger ancho-boton align-self-end">Reiniciar</button>
                 </div>
             </div>

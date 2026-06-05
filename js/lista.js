@@ -77,7 +77,7 @@ let Lista = [
 	{"Titulo":"Creo en ti","Tiempo":"70","Size":"4"},
 	{"Titulo":"Al que esta sentado en el trono","Tiempo":"71","Size":"4"},
 	{"Titulo":"Esperamos en ti","Tiempo":"117","Size":"4"},
-	{"Titulo":"Tu nos creaste","Tiempo":"79","Size":"4"},
+	{"Titulo":"Tu nos creaste","Tiempo":"79","Secuencia":[{"Descripcion":"Secuencia Completa","Archivo":"TuNosCreaste-SecCompleta.mp3"},{"Descripcion":"Secuencia Corta","Archivo":"TuNosCreaste-SecCorta.mp3"},{"Descripcion":"Secuencia Solo","Archivo":"TuNosCreaste-SecSolo.mp3"}],"Size":"4"},
 	{"Titulo":"Tu dulce amor","Tiempo":"100","Secuencia":"tuDulceAmor-Sec1.mp3","Size":"4"},
 	{"Titulo":"Dios imparable","Tiempo":"164","Secuencia":"DiosImparable-Sec1.mp3","Size":"6"},
 	{"Titulo":"Inagotable","Tiempo":"168","Secuencia":"inagotable-Sec1.mp3","Size":"6"},
