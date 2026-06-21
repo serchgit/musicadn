@@ -94,7 +94,7 @@ let Lista = [
 	{"Titulo":"La bondad de Dios","Tiempo":"126","Size":"4"},
 	{"Titulo":"En tu Luz","Tiempo":"138","Secuencia":[{"Descripcion":"Secuencia E","Archivo":"EnTuLuz-E.mp3"},{"Descripcion":"Secuencia D","Archivo":"EnTuLuz-D.mp3"}],"Size":"4"},
 	{"Titulo":"Mas el Dios","Tiempo":"124","Size":"4"},
-	{"Titulo":"Grande y fuerte","Tiempo":"150","Size":"4"},
+	{"Titulo":"Grande y fuerte","Tiempo":"150","Secuencia":[{"Descripcion":"Secuencia","Archivo":"GrandeyFuerte-Sec.mp3"},{"Descripcion":"Secuencia Sólo","Archivo":"GrandeyFuerte-SecSolo.mp3"}],"Size":"4"},
 	{"Titulo":"Acuérdate","Tiempo":"104","Size":"4"},
 	{"Titulo":"Conozco que eres Santo","Tiempo":"120","Size":"4"},
 	{"Titulo":"Cantaré de tu Amor","Tiempo":"166","Size":"4"},
@@ -194,5 +194,6 @@ let Lista = [
 	{"Titulo":"Cantare","Tiempo":"178","Size":"4"},
 	{"Titulo":"Eres suficiente","Tiempo":"108","Size":"4"},
 	{"Titulo":"El Espíritu de Dios esta aqui","Tiempo":"102","Size":"4"},
-	{"Titulo":"Santo es el que vive","Tiempo":"128","Size":"4"}
+	{"Titulo":"Santo es el que vive","Tiempo":"128","Size":"4"},
+	{"Titulo":"Asi como David Danzaba","Tiempo":"160","Secuencia":"AsiComoDavidDanzaba-Sec.mp3","Size":"4"}
 ];
