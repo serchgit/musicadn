@@ -74,5 +74,11 @@ let ListaH = [
 	{"Titulo":"Que mi vida entera esté","hVictoria":"214","Tono":"D"},
 	{"Titulo":"Vino a dar un manantial","hVictoria":"-","Tono":"Ab"},
 	{"Titulo":"Soy soldado de Cristo","hVictoria":"369","Tono":"F"},
-	{"Titulo":"Oh! jamás nos cansaremos","hVictoria":"3","Tono":"Eb"}
+	{"Titulo":"Oh! jamás nos cansaremos","hVictoria":"3","Tono":"Eb"},
+	{"Titulo":"Mientras viva","hVictoria":"524","Tono":"D"},
+	{"Titulo":"Maestro se encrespan las aguas","hVictoria":"272","Tono":"C"},
+	{"Titulo":"Al mundo paz","hVictoria":"-","Tono":"D"},
+	{"Titulo":"Al Señor yo le quiero servir","hVictoria":"-","Tono":"Bb"},
+	{"Titulo":"Loor a ti mi Dios","hVictoria":"29","Tono":"Ab"},
+	{"Titulo":"Tenme brillando","hVictoria":"525","Tono":"Eb"}
 ];

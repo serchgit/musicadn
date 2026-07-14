@@ -16,7 +16,7 @@ Lista.forEach(function (ele, index, array){
                     <button class="btn btn-sm btn-dark stop d-none" data-secuencia="${ele.Secuencia[0].Archivo}" data-index="${index}" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                         <input type="range" id="volumenListG${index}" min="0" max="1" step="0.01" value="0.4">
-                        <span class="badge bg-danger mt-2 w-75">${ele.Secuencia[0].Descripcion}</span>
+                        <span class="badge bg-danger mt-2 w-100">${ele.Secuencia[0].Descripcion}</span>
                         </i>
                     <div class="dropdown" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
                       <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdown${index}" data-bs-toggle="dropdown" aria-expanded="false">

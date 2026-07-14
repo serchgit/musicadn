@@ -92,7 +92,9 @@ ul.dropdown-menu li{
   transition: .5s;
   transform:rotate(0deg);
 }
-
+.tabla thead tr th:last-child{
+  width: 13rem !important;
+}
 /*============== estilos para arrastrar ==================== */
 
 table.listaDia {border-collapse: collapse; margin: 20px; }

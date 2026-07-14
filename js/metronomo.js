@@ -84,9 +84,9 @@ $(".tap-btn").click(function() {
 /* Add or subtract bpm */
 $(".bpm-minus, .bpm-plus").click(function() {
 if($(this).hasClass("bpm-minus"))
-  $(".bpm-input, .bpm-input-mov").val(parseInt($(".bpm-input, .bpm-input-mov").val(), 10) - 1 );
+  $(".bpm-input").val(parseInt($(".bpm-input").val(), 10) - 1 );
 else
-  $(".bpm-input, .bpm-input-mov").val(parseInt($(".bpm-input, .bpm-input-mov").val(), 10) + 1 );
+  $(".bpm-input").val(parseInt($(".bpm-input").val(), 10) + 1 );
 });
 
 /* Change pitches for tones in options */
