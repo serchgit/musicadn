@@ -195,5 +195,7 @@ let Lista = [
 	{"Titulo":"Eres suficiente","Tiempo":"108","Size":"4"},
 	{"Titulo":"El Espíritu de Dios esta aqui","Tiempo":"102","Size":"4"},
 	{"Titulo":"Santo es el que vive","Tiempo":"128","Size":"4"},
-	{"Titulo":"Asi como David Danzaba","Tiempo":"160","Secuencia":"AsiComoDavidDanzaba-Sec.mp3","Size":"4"}
+	{"Titulo":"Asi como David Danzaba","Tiempo":"160","Secuencia":"AsiComoDavidDanzaba-Sec.mp3","Size":"4"},
+	{"Titulo":"Purifícame","Tiempo":"86","Size":"4"},
+	{"Titulo":"Quiero entender","Tiempo":"100","Size":"4"}
 ];
