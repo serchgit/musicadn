@@ -198,5 +198,8 @@ let Lista = [
 	{"Titulo":"Asi como David Danzaba","Tiempo":"160","Secuencia":"AsiComoDavidDanzaba-Sec.mp3","Size":"4"},
 	{"Titulo":"Purifícame","Tiempo":"86","Size":"4"},
 	{"Titulo":"Quiero entender","Tiempo":"100","Size":"4"},
-	{"Titulo":"Tu habitas","Tiempo":"149","Size":"4"}
+	{"Titulo":"Tu habitas","Tiempo":"149","Size":"4"},
+	{"Titulo":"Poderoso Dios (Marcos Witt)","Tiempo":"121","Size":"4"},
+	{"Titulo":"Poderoso Dios (R Torres)","Tiempo":"135","Size":"4"},
+	{"Titulo":"Tu, Cordero de Dios","Tiempo":"128","Size":"4"}
 ];

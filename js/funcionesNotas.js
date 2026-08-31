@@ -73,6 +73,7 @@ function botonPlay(boton,input){
         var archivo = boton.attr("data-secuencia");
         var tipoSecu = boton.attr("data-tipoSec");
         var index = $(this).attr("data-index");
+
             let play = $("#Secuencia").val();
         //console.log(titulo)
         if (boton.hasClass("play")) {

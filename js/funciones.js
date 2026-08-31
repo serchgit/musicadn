@@ -166,6 +166,9 @@ function botonPlay(boton,input){
         if (boton.hasClass("play")) {
 
             if (play == "0") {
+
+                var volumenSlider = document.getElementById(input+index);
+                //console.log(volumenSlider.value)
                 $("#Secuencia").val("1")
                 const miAudio = new Audio('msc/'+archivo);
 
@@ -178,7 +181,7 @@ function botonPlay(boton,input){
                 $(".btn-cont-playing").click()
 
                 miAudio.play()
-                miAudio.volume = 0.3;
+                miAudio.volume = volumenSlider.value;
 
                 $(".cont-reproduciendo .collapse").addClass('show')
 
@@ -196,7 +199,6 @@ function botonPlay(boton,input){
                     $("#Secuencia").val("0")
                 });
 
-                var volumenSlider = document.getElementById(input+index);
                 // Evento para cuando cambia el valor del slider
                     volumenSlider.addEventListener('input', function() {
                         miAudio.volume = this.value;
