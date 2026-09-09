@@ -5,7 +5,7 @@ $(function () {
     
 Lista.forEach(function (ele, index, array){
     
-      var fila ="<tr data-index="+index+"><td data-toggle='tooltip' data-bs-placement='right' title='Agregar'>"+ele.Titulo+"</td><td class='text-center text-danger tiempo'><button class='btn btn-sm btn-primary btn-tempo' data-size='"+ele.Size+"'>"+ele.Tiempo+"</button></td>";
+      var fila ="<tr data-index="+index+"><td data-toggle='tooltip' data-bs-placement='right' title='Agregar'>"+ele.Titulo+"</td><td class='text-center text-danger tiempo'><button class='btn btn-sm btn-outline-info btn-tempo' data-size='"+ele.Size+"'>"+ele.Tiempo+"</button></td>";
     if(ele.Secuencia === undefined){
         fila+=`<td class="text-center"> - </td>`;
     }else{
@@ -88,7 +88,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
     //console.log(index)
     var item = `<tr data-index="${index}" draggable="true">
                     <td><button class='btn btn-sm btn-outline-danger me-2' data-toggle='tooltip' data-bs-placement='right' title='Quitar de la lista'><i class='fa fa-trash'></i></button>${Lista[index].Titulo}</td>
-                    <td class="text-danger font-weight-bold"><button class="btn btn-sm btn-primary btn-tempo" data-size="${Lista[index].Size}">${Lista[index].Tiempo}</button></td>`;
+                    <td class="text-danger font-weight-bold"><button class="btn btn-sm btn-outline-warning btn-tempo" data-size="${Lista[index].Size}">${Lista[index].Tiempo}</button></td>`;
     if (Lista[index].Secuencia == undefined) {
         item+= "<td class='text-center'><button class='btn btn-sm'> - </td></tr>";
     }else{

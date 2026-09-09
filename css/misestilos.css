@@ -3,7 +3,9 @@
     position: relative;
     padding-bottom: 4rem;
 }
-
+body{
+  background-image: url("../images/background-vertical.jpg")
+}
 .gold{color:#e2ad1b;}
 section{border-top:8px solid #fec424;}
 hr{border-top:2px solid #fec424}
@@ -38,7 +40,7 @@ form label{
   left: -1px;
   top: -1px;
 }
-.btn-dark{border-bottom: 3px solid gray}
+.btn-dark{border-bottom: 3px solid gray;border-color:aquamarine;}
 .btn-dark.stop i, .btn-reproduciendo i{color:cyan;}
 /* ============== estilos tabla ==================*/
 table thead tr{background:#e2ad1b;color:#fff;}
@@ -59,7 +61,8 @@ table thead tr{background:#e2ad1b;color:#fff;}
 .dataTables_paginate span a:first-child{border-radius: 4px 0 0 4px;}
 .dataTables_paginate span a:last-child{border-radius: 0 4px 4px 0;}
 table tbody tr td input[type=range]{width: 5.5rem;}
-table tbody tr td{vertical-align: middle;}
+table tbody tr td{vertical-align: middle; color:#fff;}
+.dataTables_filter label{color:#fff;}
 button.dropdown-toggle:after{margin-left: 0;}
 ul.dropdown-menu li{
   cursor:pointer;
@@ -95,6 +98,16 @@ ul.dropdown-menu li{
 .tabla thead tr th:last-child{
   width: 13rem !important;
 }
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #f50;
+}
+
 /*============== estilos para arrastrar ==================== */
 
 table.listaDia {border-collapse: collapse; margin: 20px; }
@@ -102,7 +115,7 @@ table.listaDia tbody tr:first-child {
   border-bottom: 4px double darkred;
 }
 table.listaDia th, td {padding: 10px; text-align: left; }
-table.listaDia tr { cursor: grab; background-color: white; }
+table.listaDia tr { cursor: grab;}
 table.listaDia /* Estilo para cuando la fila es arrastrada */
 table.listaDia tr.dragging { opacity: 0.5; background-color: #f0f0f0; }
 table.listaDia /* Estilo para resaltar destino */
