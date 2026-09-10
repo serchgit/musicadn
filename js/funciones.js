@@ -98,7 +98,7 @@ $(".tabla tbody tr td:first-child").click(function(event) {
                         <button class="btn btn-sm btn-dark stop d-none" style="position:absolute;"><i class="fa fa-stop"></i></button>
                         <i class="fa fa-volume-up px-2">
                             <input class="ms-1" type="range" id="volumenListD${index}" min="0" max="1" step="0.01" value="0.4">
-                            <span class="badge bg-danger mt-2 w-75">${Lista[index].Secuencia[0].Descripcion}</span>
+                            <span class="badge bg-danger mt-2 w-100">${Lista[index].Secuencia[0].Descripcion}</span>
                         </i>
                         <div class="dropdown" data-toggle='tooltip' data-bs-placement='top' title='Tipo de Secuencia'>
                             <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">

@@ -43,7 +43,7 @@ form label{
 .btn-dark{border-bottom: 3px solid gray;border-color:aquamarine;}
 .btn-dark.stop i, .btn-reproduciendo i{color:cyan;}
 /* ============== estilos tabla ==================*/
-table thead tr{background:#e2ad1b;color:#fff;}
+table thead tr{background:repeating-linear-gradient(52deg, black, transparent 100px);color:#fff;}
 .tabla tbody tr td:first-child{cursor:pointer;}
 .tabla tbody tr:hover{box-shadow: 1px 0 0 2px gold;}
 .dataTables_filter{display: flex;justify-content: end;margin-bottom:10px;}
@@ -95,7 +95,7 @@ ul.dropdown-menu li{
   transition: .5s;
   transform:rotate(0deg);
 }
-.tabla thead tr th:last-child{
+.tabla thead tr th:last-child, .listaDia tbody tr td:last-child{
   width: 13rem !important;
 }
 input[type=range]::-webkit-slider-thumb {

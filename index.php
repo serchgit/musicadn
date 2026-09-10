@@ -71,7 +71,7 @@
   </div>
  
 
-  <section class="container bienvenida my-3 p-2">
+  <section class="container bienvenida border-0 my-3 p-2">
      
     <h2 class="verde mb-2 text-center text-muted">Lista de Tiempos y Secuencias</h2>
     <hr>
