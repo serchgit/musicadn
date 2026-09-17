@@ -35,10 +35,20 @@ ListaH.forEach(function (ele, index, array){
         $(".tabla-himnario tbody tr").click(function(event) {
             var index = $(this).attr("data-index");
             
-            fetch("himnos/himno"+index+".html")
+            fetch("himnos/himno"+index+".html?v=1")
               .then(response => response.text())
               .then(data => {
                 document.getElementById("contenedor").innerHTML = data;
                 $("p.coro span").html("<i>CORO</i>")
+                himno();
               });
         });
+function himno(){
+  $(".botonesHimno button").click(function(event) {
+    var verso = $(this).attr("data-verso");
+    console.log(verso)
+    $(this).addClass('active').siblings('button').removeClass('active');
+    $("p[data-verso=v"+verso+"]").removeClass('d-none').siblings('p.estrofa').addClass('d-none');
+  });
+}
+himno();

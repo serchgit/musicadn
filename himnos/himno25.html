@@ -1,6 +1,11 @@
 <h4 class="text-info text-center ">OH, CANTÁDMELAS OTRA VEZ!</h4>
 <p class="text-warning text-center">G - No. HV 45</p>
-<p class="estrofa">
+<div class="d-flex justify-content-around mb-3 botonesHimno">
+  <button class="btn btn-sm btn-outline-info active" data-verso="1">Verso 1</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="2">Verso 2</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="3">Verso 3</button>
+</div>
+<p class="estrofa" data-verso="v1">
   <span>1</span><br>
 	¡OH, CANTÁDMELAS OTRA VEZ!<br>
 	BELLAS PALABRAS DE VIDA;<br>
@@ -11,7 +16,7 @@
 	// ¡QUÉ BELLAS SON, QUÉ BELLAS SON!<br>
 	BELLAS PALABRAS DE VIDA//.<br>
 </p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v2">
   <span>2</span><br>
 	JESUCRISTO A TODOS DA<br>
 	BELLAS PALABRAS DE VIDA;<br>
@@ -22,7 +27,7 @@
 	// ¡QUÉ BELLAS SON, QUÉ BELLAS SON!<br>
 	BELLAS PALABRAS DE VIDA//.<br>
 </p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v3">
   <span>3</span><br>
 	GRATO EL CÁNTICO SONARÁ,<br>
 	BELLAS PALABRAS DE VIDA;<br>

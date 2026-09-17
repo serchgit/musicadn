@@ -23,7 +23,7 @@
 <body>
 <?php require_once("header.php");?>
     
-  <section class="container bienvenida bg-light mt-3 p-2">
+  <section class="container bienvenida mt-3 p-2">
     <hr>
     <div class="d-flex flex-wrap">
       <div class="cont-tabla-notas px-2 col-12 col-lg-6">

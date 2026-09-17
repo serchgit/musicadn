@@ -1,6 +1,11 @@
 <h4 class="text-info text-center ">EL REY YA VIENE</h4>
 <p class="text-warning text-center">A - No. HV -</p>
-<p class="estrofa">
+<div class="d-flex justify-content-around mb-3 botonesHimno">
+  <button class="btn btn-sm btn-outline-info active" data-verso="1">Verso 1</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="2">Verso 2</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="3">Verso 3</button>
+</div>
+<p class="estrofa" data-verso="v1">
   <span>1</span><br>
 	EL MERCADO ESTÁ VACÍO,<br>
 	NADA SE OYE TRANSITAR,<br>
@@ -11,15 +16,7 @@
 	TODO QUEDA SUSPENDIDO<br>
 	HA LLEGADO CRISTO REY<br>
 </p>
-<p class="coro">
-  <span>CORO</span><br>
-	SÍ, // EL REY YA VIENE //,<br>
-	AL SONAR LA REAL TROMPETA<br>
-	YO SU FAZ AL FIN VERÉ<br>
-	// EL REY YA VIENE //,<br>
-	GLORIA A DIOS, ÉL VIENE POR MÍ.<br>
-</p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v2">
   <span>2</span><br>
 	LOS SEMBLANTES MUY FELICES<br>
 	DE LOS QUE ÉL REDIMIÓ,<br>
@@ -30,7 +27,7 @@
 	LOS PEQUEÑOS Y ANCIANOS<br>
 	MANO A MANO EN DERREDOR<br>
 </p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v3">
   <span>3</span><br>
 	LAS CARROZAS VAN RUGIENDO,<br>
 	MARCHA YA LA MULTITUD,<br>
@@ -40,4 +37,13 @@
 	PREPARADAS CON AMOR<br>
 	Y EL CORO ENTONANDO<br>
 	LA CANCIÓN DE REDENCIÓN<br>
+</p>
+
+<p class="coro">
+  <span>CORO</span><br>
+	SÍ, // EL REY YA VIENE //,<br>
+	AL SONAR LA REAL TROMPETA<br>
+	YO SU FAZ AL FIN VERÉ<br>
+	// EL REY YA VIENE //,<br>
+	GLORIA A DIOS, ÉL VIENE POR MÍ.<br>
 </p>

@@ -1,6 +1,11 @@
 <h4 class="text-info text-center ">¡NOCHE DE PAZ!</h4>
 <p class="text-warning text-center">C - No. HV 79</p>
-<p class="estrofa">
+<div class="d-flex justify-content-around mb-3 botonesHimno">
+  <button class="btn btn-sm btn-outline-info active" data-verso="1">Verso 1</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="2">Verso 2</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="3">Verso 3</button>
+</div>
+<p class="estrofa" data-verso="v1">
   <span>1</span><br>
 	¡NOCHE DE PAZ, NOCHE DE AMOR!<br>
 	TODO DUERME EN DERREDOR,<br>
@@ -8,7 +13,7 @@
 	BELLA ANUNCIANDO AL NIÑITO JESÚS;<br>
 	// BRILLA LA ESTRELLA DE PAZ //<br>
 </p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v2">
   <span>2</span><br>
 	¡NOCHE DE PAZ, NOCHE DE AMOR!<br>
 	OYE HUMILDE EL FIEL PASTOR,<br>
@@ -16,7 +21,7 @@
 	GRACIAS Y GLORIAS EN GRAN PLENITUD,<br>
 	// POR NUESTRO BUEN REDENTOR //<br>
 </p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v3">
   <span>3</span><br>
 	¡NOCHE DE PAZ, NOCHE DE AMOR!<br>
 	VED QUE BELLO RESPLANDOR,<br>

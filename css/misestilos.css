@@ -240,7 +240,10 @@ p.coro span i{
 p.estrofa br:nth-child(2), p.coro br:nth-child(2){
   display: none;
 }
-
+.botonesHimno button{
+  width: 5rem;
+}
+.botonesHimno button.active{color:#fff; font-weight: 700;}
 
 @media (min-width: 1080px){
   .letraCanto div.col-lg-11{width: 67.66667%;}
