@@ -247,6 +247,16 @@ function BtnTempo(button){
 
             _counter.append( temp );
           }
+
+        $("play-btn").data("what","pause")
+        
+        if($(".play-btn").data("what") === "pause")
+          {
+            // ====== Pause ====== //
+          }else{
+            $(".play-btn").click();
+            
+          }
     });
 }
 

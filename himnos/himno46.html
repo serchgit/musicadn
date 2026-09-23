@@ -1,6 +1,11 @@
 <h4 class="text-info text-center ">CUANDO LA TROMPETA SUENE</h4>
 <p class="text-warning text-center">Ab - No. HV -</p>
-<p class="estrofa">
+<div class="d-flex justify-content-around mb-3 botonesHimno">
+  <button class="btn btn-sm btn-outline-info active" data-verso="1">Verso 1</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="2">Verso 2</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="3">Verso 3</button>
+</div>
+<p class="estrofa" data-verso="v1">
   <span>1</span><br>
 	CUANDO LA TROMPETA SUENE<br>
 	EN AQUEL DÍA FINAL<br>
@@ -9,12 +14,7 @@
 	A SU PATRIA LLEGUEN YA,<br>
 	Y QUE SEA PASADA LISTA, ALLÍ HE DE ESTAR.<br>
 </p>
-<p class="coro">
-  <span>CORO</span><br>
-	///CUANDO ALLÁ SE PASE LISTA///<br>
-	A MI NOMBRE YO FELIZ RESPONDERÉ.<br>
-</p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v2">
   <span>2</span><br>
 	EN AQUEL DÍA SIN NIEBLAS,<br>
 	EN QUE MUERTE YA NO HABRÁ,<br>
@@ -23,7 +23,7 @@
 	A SU CELESTIAL HOGAR,<br>
 	Y QUE SEA PASADA LISTA, ALLÍ HE DE ESTAR<br>
 </p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v3">
   <span>3</span><br>
 	TRABAJEMOS POR EL MAESTRO,<br>
 	DESDE EL ALBA AL VISLUMBRAR;<br>
@@ -31,4 +31,10 @@
 	CUANDO TODO AQUÍ FENEZCA<br>
 	Y NUESTRA OBRA CESE YA,<br>
 	Y QUE SEA PASADA LISTA ALLÍ HE DE ESTAR.<br>
+</p>
+
+<p class="coro py-3">
+  <span>CORO</span><br>
+	///CUANDO ALLÁ SE PASE LISTA///<br>
+	A MI NOMBRE YO FELIZ RESPONDERÉ.<br>
 </p>

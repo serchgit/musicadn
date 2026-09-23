@@ -1,6 +1,11 @@
 <h4 class="text-info text-center ">SANTO, SANTO, GRANDE</h4>
 <p class="text-warning text-center">F - No. HV 19</p>
-<p class="estrofa">
+<div class="d-flex justify-content-around mb-3 botonesHimno">
+  <button class="btn btn-sm btn-outline-info active" data-verso="1">Verso 1</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="2">Verso 2</button>
+  <button class="btn btn-sm btn-outline-info" data-verso="3">Verso 3</button>
+</div>
+<p class="estrofa" data-verso="v1">
   <span>1</span><br>
 	¡SANTO!, ¡SANTO! GRANDE, ETERNO DIOS<br>
 	CON ALEGRÍA HOY TE ALABAMOS;<br>
@@ -9,12 +14,7 @@
 	HONOR Y GLORIA, LUZ Y DOMINIO,<br>
 	TRIBUTAREMOS TODOS A TI.<br>
 </p>
-<p class="coro">
-  <span>CORO</span><br>
-	¡SANTO!, ¡SANTO! ERES TÚ, SEÑOR,<br>
-	¡DIOS DE LAS BATALLAS, GLORIOSO!<br>
-</p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v2">
   <span>2</span><br>
 	ALABADLE, CIELOS, TIERRA Y MAR,<br>
 	TODA SU IGLESIA, SUS MENSAJEROS;<br>
@@ -23,7 +23,7 @@
 	JUEZ MAJESTUOSO Y REVERENDO,<br>
 	FUEGO Y VIDA ERES, SEÑOR.<br>
 </p>
-<p class="estrofa">
+<p class="estrofa d-none" data-verso="v3">
   <span>3</span><br>
 	REY DE SIGLOS, SOLO SANTO DIOS,<br>
 	JUSTO Y ETERNO, INCOMPRENSIBLE;<br>
@@ -31,4 +31,10 @@
 	ERES TÚ EL ANCIANO DE DÍAS.<br>
 	Y PARA SIEMPRE ENTONAREMOS<br>
 	EL CANTO ETERNO DE REDENCIÓN.<br>
+</p>
+
+<p class="coro py-3">
+  <span>CORO</span><br>
+	¡SANTO!, ¡SANTO! ERES TÚ, SEÑOR,<br>
+	¡DIOS DE LAS BATALLAS, GLORIOSO!<br>
 </p>

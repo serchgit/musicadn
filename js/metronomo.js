@@ -125,31 +125,31 @@ $(".ts-top, .ts-bottom").on("change", function() {
 
 /* Play and stop button */
 $(".play-btn").click(function() {
+  console.log($(this).data("what"))
+  if($(this).data("what") === "pause")
+  {
+    // ====== Pause ====== //
+    counting = false;
+    window.clearInterval(timer);
+    $(".counter .dot").attr("style", "");
+    $(this).data("what", "play").attr("style","").html("<i class='fa fa-play'></i>");
+  }
+  else {
+    // ====== Play ====== //
+    
+  if( $("#timer-check, #timer-check-mov").is(":checked") )
+   {
+     counting = true;
+     countDown();
+   }
+    
+    curTime = context.currentTime;
+    noteCount = parseInt($(".ts-top").val(), 10);
+    schedule();
 
-if($(this).data("what") === "pause")
-{
-  // ====== Pause ====== //
-  counting = false;
-  window.clearInterval(timer);
-  $(".counter .dot").attr("style", "");
-  $(this).data("what", "play").attr("style","").html("<i class='fa fa-play'></i>");
-}
-else {
-  // ====== Play ====== //
-  
-if( $("#timer-check, #timer-check-mov").is(":checked") )
- {
-   counting = true;
-   countDown();
- }
-  
-  curTime = context.currentTime;
-  noteCount = parseInt($(".ts-top").val(), 10);
-  schedule();
-
-  $(this).data("what", "pause").css({
-    background: "#F75454",
-    color: "#FFF"
-  }).html("<i class='fa fa-stop text-white'></i>");
-}
+    $(this).data("what", "pause").css({
+      background: "#F75454",
+      color: "#FFF"
+    }).html("<i class='fa fa-stop text-white'></i>");
+  }
 });
