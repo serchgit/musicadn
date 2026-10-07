@@ -28,12 +28,21 @@ curTime += 60.0 / parseInt($(".bpm-input").val(), 10);
 noteCount++;
 }
 
+let pannerOptions = { pan: 1 };
+
+$(".Panner label").click(function(event) {
+  let idInput = $(this).attr("for");
+  let paneo = parseInt($("#"+idInput).val())
+  console.log(paneo)
+  pannerOptions = {pan: paneo}
+});
+
 /* Play note on a delayed interval of t */
 function playNote(t) {
     var note = context.createOscillator();
 
     //Panorizacion 1 = Derecha | -1 = izquierda
-    const pannerOptions = { pan: 1 };
+    //const pannerOptions = { pan: 1 };
     const panner = new StereoPannerNode(context, pannerOptions);
 
     if(noteCount == parseInt($(".ts-top").val(), 10) )

@@ -23,7 +23,7 @@ input[type="range"] {
    background: #222;
  }
 
- input[type="checkbox"] {
+ #timer-check {
    display: none;
  }
   input[type="checkbox"] + label {

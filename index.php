@@ -49,12 +49,24 @@
 
         <button class="btn play-btn btn-secondary text-dark"><i class="fa fa-play"></i></button>
         <button class="btn btn-secondary tap-btn">Tap</button>
+        
       </div>
       
-      <div class="options">
+      <div class="options text-center">
         <i class="fa fa-caret-down up"></i>
         <label>Off Beat Pitch: <input type="range" min="0" max="500" value="250" class="beat-range" /></label>
         <label>Accent Pitch: <input type="range" min="0" max="500" value="420" class="accent-range" /></label>
+        <div class="btn-group Panner flex-wrap" role="group" aria-label="Basic radio toggle button group">
+          <p class="mb-0 w-100">BPM</p>
+          <input type="radio" class="btn-check" name="paneo" id="paneo1" value="-1" autocomplete="off">
+          <label class="btn btn-outline-dark rounded-start mt-0" for="paneo1">Left</label>
+
+          <input type="radio" class="btn-check" name="paneo" id="paneo2" value="0" autocomplete="off">
+          <label class="btn btn-outline-dark mt-0" for="paneo2">Center</label>
+
+          <input type="radio" class="btn-check" name="paneo" id="paneo3" value="1" autocomplete="off" checked>
+          <label class="btn btn-outline-dark mt-0" for="paneo3">Right</label>
+        </div>
       </div>
     </section>
     <div class="cont-reproduciendo text-center">
