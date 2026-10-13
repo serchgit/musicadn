@@ -29,7 +29,7 @@
     <section class="metronome-container w-100 bg-dark m-0 mt-2">
       <div class="counter pt-3 pb-0"></div>
       
-      <i class="fa fa-cog options-btn"></i>
+      <i class="fa fa-cog options-btn" data-toggle="tooltip" data-bs-placement="left" title="Ajustes"></i>
 
       <div class="controls d-flex align-items-center justify-content-between">
         <label>BPM: <span class="ms-1">
@@ -54,8 +54,8 @@
       
       <div class="options text-center">
         <i class="fa fa-caret-down up"></i>
-        <label>Off Beat Pitch: <input type="range" min="0" max="500" value="250" class="beat-range" /></label>
-        <label>Accent Pitch: <input type="range" min="0" max="500" value="420" class="accent-range" /></label>
+        <label>Pulso Normal: <input type="range" min="0" max="500" value="250" class="beat-range" /></label>
+        <label>Pulso Acentuado: <input type="range" min="0" max="500" value="420" class="accent-range" /></label>
         <div class="btn-group Panner flex-wrap" role="group" aria-label="Basic radio toggle button group">
           <p class="mb-0 w-100">BPM</p>
           <input type="radio" class="btn-check" name="paneo" id="paneo1" value="-1" autocomplete="off">

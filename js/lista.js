@@ -153,7 +153,7 @@ let Lista = [
 	{"Titulo":"El Sacrificio","Tiempo":"147","Size":"4"},
 	{"Titulo":"Solo me imagino","Tiempo":"146","Size":"4"},
 	{"Titulo":"Dios de Pactos","Tiempo":"136","Size":"4"},
-	{"Titulo":"Cuan grande es El (Himno)","Tiempo":"136","Size":"4"},
+	{"Titulo":"Cuan grande es El (Himno)","Tiempo":"114","Size":"4"},
 	{"Titulo":"Te doy gloria","Tiempo":"136","Size":"4"},
 	{"Titulo":"Los enemigos de Jehová","Tiempo":"152","Size":"4"},
 	{"Titulo":"Al borde (Exáltate)","Tiempo":"112","Size":"4"},
@@ -201,5 +201,9 @@ let Lista = [
 	{"Titulo":"Tu habitas","Tiempo":"149","Size":"4"},
 	{"Titulo":"Poderoso Dios (Marcos Witt)","Tiempo":"121","Size":"4"},
 	{"Titulo":"Poderoso Dios (R Torres)","Tiempo":"135","Size":"4"},
-	{"Titulo":"Tu, Cordero de Dios","Tiempo":"128","Size":"4"}
+	{"Titulo":"Tu, Cordero de Dios","Tiempo":"128","Size":"4"},
+	{"Titulo":"Sana nuestra tierra","Tiempo":"122","Secuencia":"SanaNuestraTierra-Secuencia.mp3","Size":"4"},
+	{"Titulo":"Sananos","Tiempo":"122","Secuencia":[{"Descripcion":"Secuencia","Archivo":"Sananos-Secuencia.mp3"},{"Descripcion":"Secuencia (2)","Archivo":"SananosCompleta2.mp3"}],"Size":"4"},
+	{"Titulo":"Ven y llena esta casa","Tiempo":"115","Size":"4"},
+	{"Titulo":"Mereces la gloria","Tiempo":"112","Size":"4"}
 ];
