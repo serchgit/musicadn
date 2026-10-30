@@ -205,5 +205,6 @@ let Lista = [
 	{"Titulo":"Sana nuestra tierra","Tiempo":"122","Secuencia":"SanaNuestraTierra-Secuencia.mp3","Size":"4"},
 	{"Titulo":"Sananos","Tiempo":"122","Secuencia":[{"Descripcion":"Secuencia","Archivo":"Sananos-Secuencia.mp3"},{"Descripcion":"Secuencia (2)","Archivo":"SananosCompleta2.mp3"}],"Size":"4"},
 	{"Titulo":"Ven y llena esta casa","Tiempo":"115","Size":"4"},
-	{"Titulo":"Mereces la gloria","Tiempo":"112","Size":"4"}
+	{"Titulo":"Mereces la gloria","Tiempo":"112","Size":"4"},
+	{"Titulo":"Salmo 150","Tiempo":"140","Size":"4"}
 ];
