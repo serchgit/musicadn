@@ -156,7 +156,7 @@ let Lista = [
 	{"Titulo":"Cuan grande es El (Himno)","Tiempo":"114","Size":"4"},
 	{"Titulo":"Te doy gloria","Tiempo":"136","Size":"4"},
 	{"Titulo":"Los enemigos de Jehová","Tiempo":"152","Size":"4"},
-	{"Titulo":"Al borde (Exáltate)","Tiempo":"112","Size":"4"},
+	{"Titulo":"Al borde (Exaltate)","Tiempo":"112","Size":"4"},
 	{"Titulo":"Somos Pueblo","Tiempo":"142","Size":"4"},
 	{"Titulo":"Roca eterna","Tiempo":"126","Size":"4"},
 	{"Titulo":"Haz ganado","Tiempo":"140","Size":"4"},
@@ -206,5 +206,6 @@ let Lista = [
 	{"Titulo":"Sananos","Tiempo":"122","Secuencia":[{"Descripcion":"Secuencia","Archivo":"Sananos-Secuencia.mp3"},{"Descripcion":"Secuencia (2)","Archivo":"SananosCompleta2.mp3"}],"Size":"4"},
 	{"Titulo":"Ven y llena esta casa","Tiempo":"115","Size":"4"},
 	{"Titulo":"Mereces la gloria","Tiempo":"112","Size":"4"},
-	{"Titulo":"Salmo 150","Tiempo":"140","Size":"4"}
+	{"Titulo":"Salmo 150","Tiempo":"140","Size":"4"},
+	{"Titulo":"Aquí estoy","Tiempo":"125","Size":"4"}
 ];
